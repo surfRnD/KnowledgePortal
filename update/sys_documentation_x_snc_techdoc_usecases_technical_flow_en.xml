@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="technical_flow" label="Technical Flow" language="en" table="x_snc_techdoc_usecases">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>technical_flow</element>
+            <help/>
+            <hint/>
+            <label>Technical Flow</label>
+            <language>en</language>
+            <name>x_snc_techdoc_usecases</name>
+            <plural>Technical Flows</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-29 17:50:33</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>048596434f536a004172fc728110c7f4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Technical Flow</sys_name>
+            <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_techdoc_usecases_technical_flow_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-29 17:50:33</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

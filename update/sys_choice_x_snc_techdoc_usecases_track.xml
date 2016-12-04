@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="track" table="x_snc_techdoc_usecases" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>track</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Sales</label>
+            <language>en</language>
+            <name>x_snc_techdoc_usecases</name>
+            <sequence>100</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-01 19:45:45</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c803817b4f1f6a004172fc728110c7ed</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-01 19:46:44</sys_updated_on>
+            <value>sales</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>track</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Marketing</label>
+            <language>en</language>
+            <name>x_snc_techdoc_usecases</name>
+            <sequence>200</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-01 19:45:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4703057b4f1f6a004172fc728110c718</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-01 19:46:46</sys_updated_on>
+            <value>marketing</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>track</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Partner Portal</label>
+            <language>en</language>
+            <name>x_snc_techdoc_usecases</name>
+            <sequence>300</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-01 19:46:00</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f013057b4f1f6a004172fc728110c719</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-01 19:46:50</sys_updated_on>
+            <value>partnerportal</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>track</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Professional Services</label>
+            <language>en</language>
+            <name>x_snc_techdoc_usecases</name>
+            <sequence>400</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-01 19:46:21</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b213817b4f1f6a004172fc728110c7ee</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-01 19:46:53</sys_updated_on>
+            <value>ps</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>track</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>LMS</label>
+            <language>en</language>
+            <name>x_snc_techdoc_usecases</name>
+            <sequence>500</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-01 19:46:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cc33817b4f1f6a004172fc728110c7ee</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-01 19:46:56</sys_updated_on>
+            <value>lms</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>track</element>
+            <name>x_snc_techdoc_usecases</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-12-01 19:45:45</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>7a03057b4f1f6a004172fc728110c738</sys_id>
+            <sys_mod_count>15</sys_mod_count>
+            <sys_name>track</sys_name>
+            <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
+            <sys_update_name>sys_choice_x_snc_techdoc_usecases_track</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-12-01 19:46:56</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[var useCaseId = location.href.parseQuery()['sysparm_usecase_id'];
+var demoURL = location.href.parseQuery()['sysparm_demoflow'];
+$j('#functional-demo').attr('src',demoURL);
+var currentCtxId = '';
+var stepCount = 0;
+var wfId = location.href.parseQuery()['sysparm_wf'];
+startWorkflow();
+var init = false;
+function preprocess() {
+	$j('body').append('<div id="overlay" class="overlay">');
+	setTimeout(window.focus(),2);
+}
+
+function resizeFrames() {
+	$j(document.getElementById('technical-demo')).removeClass('hide');	
+	$j(document.getElementById('technical-demo')).addClass('rightpane');
+	$j(document.getElementById('activityDetails')).removeClass('hide');
+	$j('#hideWhatfixButtons').addClass('hideWhatfixButtons');
+	setTimeout(function(){
+		$j("#overlay").css('display','none');
+		window.focus();
+	},3000);
+}
+
+function startWorkflow(){
+	var ga = new GlideAjax('global.TechnicalDocumentUtil');
+	ga.addParam('sysparm_name','startWorkflow');
+	console.log(wfId);
+	ga.addParam('sysparm_wf', wfId);
+	ga.getXML(updateIframeSrc);
+}
+function updateIframeSrc(response) {
+   var contextId = response.responseXML.documentElement.getAttribute("answer");
+   console.log(contextId);
+   currentCtxId = contextId;
+   $j('#technical-demo').attr('src','/context_workflow.do?sysparm_sys_id=' + contextId);
+}
+
+
+var demoWindow = document.getElementById('functional-demo').contentWindow;
+var myConfObj = {
+  iframeMouseOver : false
+};
+
+$j(window).blur(function(){
+  if(!init) {
+	 $j('.activityDetails .activity-li').live('click',function() { 
+		 var displayVal = $j(this).find('#details').css('display');
+		 displayVal = (displayVal == 'block')?'none':'block';
+		 $j(this).find('#details').css('display', displayVal);		 		 
+	 });	  
+	 $j('.screen_mode').live('click', function() {
+		if($j('.activityDetails').css('top') == '0px') {
+			$j('.activityDetails').css({'top':'462px','width': '622px','height': '400px'}); 
+			$j('.rightpane').css('display','block');
+		}else {
+			$j('.activityDetails').css({'top':'0','width': '100%','height': '870px'}); 
+			$j('.rightpane').css('display','none');
+		}
+
+	 });
+	 init = true;
+  }
+ 
+  if(myConfObj.iframeMouseOver){
+	stepCount = stepCount + 1;
+    console.log('Step = ' + stepCount);
+	var ga = new GlideAjax('global.TechnicalDocumentUtil');
+	ga.addParam('sysparm_name','workFlowChange');
+	ga.addParam('sysparm_usecase_id',useCaseId);
+	ga.addParam('sysparm_ctx_id',currentCtxId);	  
+	ga.addParam('sysparm_step', stepCount);
+	$j('#overlay').css('display', 'block');
+	ga.getXML(workFlowChange);  
+	setTimeout(resetWindowFocus,0);
+  }
+});
+
+function workFlowChange(response){
+	var result = response.responseXML.documentElement.getAttribute("answer");
+	if(result == 'true') {
+		//Refresh the workflow		
+		$j(document.getElementById('technical-demo').contentDocument).find('.icon-refresh')[0].click();
+			var ga = new GlideAjax('global.TechnicalDocumentUtil');
+			ga.addParam('sysparm_name','popMessages');
+			ga.addParam('sysparm_usecase_id',useCaseId);
+			ga.addParam('sysparm_ctx_id',currentCtxId);	  
+			$j('#overlay').css('display', 'block');
+			ga.getXML(updateActivityDetails);
+
+		$j('#overlay').css('display', 'none');
+	}
+	$j('#overlay').css('display', 'none');
+}
+
+function updateActivityDetails(response){
+		var result = response.responseXML.documentElement.getAttribute("answer");
+		if(result) {
+			var messages = JSON.parse(result);
+			if(messages && messages.length > 0) {
+				$j(".activityDetails .activity-ul").remove();
+				$j(".activityDetails").append("<ul class='activity-ul'/>");
+				
+				for(var indx=0; indx<messages.length; indx++) {	
+					if(messages[indx] && messages[indx]['name'].length > 0) {						
+						$j(".activityDetails .activity-ul").append("<li class='activity-li'><span id='header'>" + messages[indx]['name'] + "</span><div id='details' class='details' style='display:none;'>" + 
+						((messages[indx]['desc'])?"<span id='desc'><ul class='row'<li id='label'>Description</li><li id='value'>" + messages[indx]['desc'] + "</li></ul></span>": "") + 
+						((messages[indx]['script'])?"<span id='script'><ul class='row'><li id='label'>Notes</li></br><li id='value'><pre><code>" + messages[indx]['script'] + "</code></pre></li></ul></span>":"") + 
+						((messages[indx]['type'])?"<span id='type'><ul class='row'><li id='label'>Artifact Type</li><li id='value'>" + messages[indx]['type'] + "</li></ul></span>":"") + 
+						((messages[indx]['url'])?"<span id='url'><ul class='row'><li id='label'>Artifact URL</li><li id='value'>" + messages[indx]['url'] + "</li></span>":"") + 
+					  "</div></li>");				
+					}		
+				}
+
+			}
+		}
+}
+
+function resetWindowFocus(){
+	window.focus();
+	
+}
+
+$j(document.getElementById('functional-demo')).mouseover(function(){
+	myConfObj.iframeMouseOver = true;
+});
+
+$j(document.getElementById('functional-demo')).mouseout(function(){
+	myConfObj.iframeMouseOver = false;
+});
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_snc_techdoc_flow-nav.do</endpoint>
+        <html><![CDATA[<iframe id="functional-demo" scrolling="no" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" class="leftpane" src="#" onload="preprocess();"/>
+
+<div id="hideWhatfixButtons"/>
+<iframe id="technical-demo" src="" class="hide" onload="resizeFrames();"></iframe>
+<div id="activityDetails" class="hide activityDetails">
+	<img class="screen_mode" src="fullscreen.png"/>	
+	<span id="trace-header">Trace Details</span>
+	<ul class="activity-ul"/>
+</div>
+
+<style>
+
+.screen_mode {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    z-index: 999;
+    right: 20px;
+}
+
+img.screen_mode:hover {
+    cursor: pointer;
+}
+
+  .activityDetails {
+    position: absolute;
+    top: 462px;
+    left: 6px;
+    width: 622px;
+    overflow: scroll;
+    height: 400px;
+	background-color: bisque;	
+  }
+	
+.activityDetails #details span {
+    display: block;
+}
+	
+	span#trace-header {
+		font-size: large;
+		font-weight: 800;
+		position: relative;
+		left: 30px;
+		top: 20px;
+	}	
+	
+div#details {
+    background-color: #fbf6f0;
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 500px;
+    overflow-x: scroll;
+}
+	
+ul#label {
+    list-style-type: none;
+}
+
+ul.row {
+    list-style-type: none;
+    display: block;
+    width: 500px;
+}
+
+li#label {
+    display: inline;
+}
+
+li#value {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.activityDetails #header:hover {
+	background-color: #d9e4ea;
+	cursor: pointer;
+}
+
+	
+.activityDetails .activity-ul {
+    list-style-type: none;
+    display: block;
+    width: 300px;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+	position: relative;
+    top: 20px;
+}
+
+.activityDetails .activity-li {
+	font-style: italic;
+}
+
+.activityDetails .activity-li:before {
+	content: "\2192";
+}
+  .hide {
+	display:none;
+  }
+  .leftpane {
+     width:622px;
+     height: 461px;
+  }
+  .rightpane {
+	position: absolute;
+    height: 861px;
+	width:100%;
+	top:0px;
+	left:622px;
+  }
+  .overlay {
+	 position:absolute;
+	 top:0px;
+	 left:0px;
+	 height:870px;
+	 width:100%;
+	 z-index: 999;
+	 background-color:rgba(72, 85, 99, 0.66);
+	 background-image: url('loading.gif');
+	 background-size: 5%;
+	 background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center; 
+  }
+
+  .hideWhatfixButtons {	
+      position: absolute;
+	  top: 420px;
+      left: 15px;
+      height: 40px;
+      width: 602px;
+      background-color: #423e3f;
+   }
+</style>
+]]></html>
+        <name>flow-nav</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-11-29 18:58:27</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>d8d3220b4f536a004172fc728110c74b</sys_id>
+        <sys_mod_count>115</sys_mod_count>
+        <sys_name>flow-nav</sys_name>
+        <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
+        <sys_update_name>sys_ui_page_d8d3220b4f536a004172fc728110c74b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-12-04 12:48:34</sys_updated_on>
+    </sys_ui_page>
+</record_update>

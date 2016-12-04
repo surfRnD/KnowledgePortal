@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="wf_activity_definition" relationship="" sys_domain="global" table="wf_condition_default" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>name</element>
+            <list_id display_value="wf_condition_default" element="NULL" name="wf_condition_default" parent="wf_activity_definition" relationship="NULL" sys_domain="global" view="Default view">98fa8d75c0a800664d44737b882a02e4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>glide.maint</sys_created_by>
+            <sys_created_on>2009-01-02 20:13:23</sys_created_on>
+            <sys_id>98fa8d86c0a8006664d7be28d1bf73eb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>glide.maint</sys_updated_by>
+            <sys_updated_on>2009-01-02 20:13:23</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>activity_definition</element>
+            <list_id display_value="wf_condition_default" element="NULL" name="wf_condition_default" parent="wf_activity_definition" relationship="NULL" sys_domain="global" view="Default view">98fa8d75c0a800664d44737b882a02e4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>glide.maint</sys_created_by>
+            <sys_created_on>2009-01-02 20:13:23</sys_created_on>
+            <sys_id>98fa8d96c0a800665da85dc5ba8d2e82</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>glide.maint</sys_updated_by>
+            <sys_updated_on>2009-01-02 20:13:23</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>condition</element>
+            <list_id display_value="wf_condition_default" element="NULL" name="wf_condition_default" parent="wf_activity_definition" relationship="NULL" sys_domain="global" view="Default view">98fa8d75c0a800664d44737b882a02e4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>glide.maint</sys_created_by>
+            <sys_created_on>2009-01-02 20:13:23</sys_created_on>
+            <sys_id>98fa8d9cc0a80066399211e7c92b2bd8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>glide.maint</sys_updated_by>
+            <sys_updated_on>2009-01-02 20:13:23</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="wf_condition_default" element="NULL" name="wf_condition_default" parent="wf_activity_definition" relationship="NULL" sys_domain="global" view="Default view">98fa8d75c0a800664d44737b882a02e4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>glide.maint</sys_created_by>
+            <sys_created_on>2009-01-02 20:13:23</sys_created_on>
+            <sys_id>98fa8da1c0a80066582115d8b4751abb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>glide.maint</sys_updated_by>
+            <sys_updated_on>2009-01-02 20:13:23</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>order</element>
+            <list_id display_value="wf_condition_default" element="NULL" name="wf_condition_default" parent="wf_activity_definition" relationship="NULL" sys_domain="global" view="Default view">98fa8d75c0a800664d44737b882a02e4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>glide.maint</sys_created_by>
+            <sys_created_on>2009-01-02 20:13:23</sys_created_on>
+            <sys_id>98fa8da6c0a8006676fe0d81a7eea84c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>glide.maint</sys_updated_by>
+            <sys_updated_on>2009-01-02 20:13:23</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>skip_during_generate</element>
+            <list_id display_value="wf_condition_default" element="NULL" name="wf_condition_default" parent="wf_activity_definition" relationship="NULL" sys_domain="global" view="Default view">98fa8d75c0a800664d44737b882a02e4</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>glide.maint</sys_created_by>
+            <sys_created_on>2009-01-02 20:13:23</sys_created_on>
+            <sys_id>98fa8dabc0a800661fa9a7815d09af96</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>glide.maint</sys_updated_by>
+            <sys_updated_on>2009-01-02 20:13:23</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>wf_condition_default</name>
+            <parent>wf_activity_definition</parent>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-27 08:02:40</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>70cbf9da4f172a004172fc728110c7a7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name/>
+            <sys_package/>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
+            <sys_update_name/>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-27 08:02:40</sys_updated_on>
+            <sys_user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</sys_user>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

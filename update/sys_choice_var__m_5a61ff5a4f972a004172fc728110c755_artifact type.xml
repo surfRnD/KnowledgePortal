@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="Artifact Type" table="var__m_5a61ff5a4f972a004172fc728110c755" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>Artifact Type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UI Page</label>
+            <language>en</language>
+            <name>var__m_5a61ff5a4f972a004172fc728110c755</name>
+            <sequence>100</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-27 18:07:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0e3640624fd72a004172fc728110c77e</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-27 18:30:05</sys_updated_on>
+            <value>sys_ui_page</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>Artifact Type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Client Script</label>
+            <language>en</language>
+            <name>var__m_5a61ff5a4f972a004172fc728110c755</name>
+            <sequence>200</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-27 17:47:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0ca18cee4f972a004172fc728110c744</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-27 18:09:16</sys_updated_on>
+            <value>sys_script_client</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>Artifact Type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UI Action</label>
+            <language>en</language>
+            <name>var__m_5a61ff5a4f972a004172fc728110c755</name>
+            <sequence>300</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-27 18:07:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>54268c224fd72a004172fc728110c7f9</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-27 18:09:20</sys_updated_on>
+            <value>sys_ui_action</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>Artifact Type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>UI Script</label>
+            <language>en</language>
+            <name>var__m_5a61ff5a4f972a004172fc728110c755</name>
+            <sequence>400</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-27 18:07:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>354640624fd72a004172fc728110c7e2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-27 18:09:27</sys_updated_on>
+            <value>sys_ui_script</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>Artifact Type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Script Include</label>
+            <language>en</language>
+            <name>var__m_5a61ff5a4f972a004172fc728110c755</name>
+            <sequence>500</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-27 18:06:56</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9a0600624fd72a004172fc728110c71a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-27 18:09:36</sys_updated_on>
+            <value>sys_script_include</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>Artifact Type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Business Rule</label>
+            <language>en</language>
+            <name>var__m_5a61ff5a4f972a004172fc728110c755</name>
+            <sequence>600</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-27 17:47:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>72514cee4f972a004172fc728110c74b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-27 18:09:41</sys_updated_on>
+            <value>sys_script</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>Artifact Type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Event Registry</label>
+            <language>en</language>
+            <name>var__m_5a61ff5a4f972a004172fc728110c755</name>
+            <sequence>700</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-27 17:49:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c6f1ccee4f972a004172fc728110c7cb</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-27 18:09:51</sys_updated_on>
+            <value>sysevent_register</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>Artifact Type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Script Action</label>
+            <language>en</language>
+            <name>var__m_5a61ff5a4f972a004172fc728110c755</name>
+            <sequence>800</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-27 18:05:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>dba58c224fd72a004172fc728110c7dc</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-27 18:09:54</sys_updated_on>
+            <value>sysevent_script_action</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>Artifact Type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Workflow</label>
+            <language>en</language>
+            <name>var__m_5a61ff5a4f972a004172fc728110c755</name>
+            <sequence>900</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-27 18:08:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>346680624fd72a004172fc728110c7a4</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-27 18:09:58</sys_updated_on>
+            <value>wf_workflow_version</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>Artifact Type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Workflow Activity</label>
+            <language>en</language>
+            <name>var__m_5a61ff5a4f972a004172fc728110c755</name>
+            <sequence>1000</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-27 18:08:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9a7680624fd72a004172fc728110c7a6</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-27 18:10:02</sys_updated_on>
+            <value>wf_activity_definition</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>Artifact Type</element>
+            <name>var__m_5a61ff5a4f972a004172fc728110c755</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-11-27 17:47:07</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>16818cee4f972a004172fc728110c753</sys_id>
+            <sys_mod_count>23</sys_mod_count>
+            <sys_name>Artifact Type</sys_name>
+            <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
+            <sys_update_name>sys_choice_var__m_5a61ff5a4f972a004172fc728110c755_Artifact Type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-11-27 18:30:05</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

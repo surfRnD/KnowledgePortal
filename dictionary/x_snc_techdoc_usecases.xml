@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Use Cases" max_length="40" name="x_snc_techdoc_usecases" type="collection">
+        <element label="Description" max_length="4000" name="description" type="string"/>
+        <element label="Feature" max_length="40" name="feature" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Navigator" max_length="1024" name="navigator" type="url"/>
+        <element label="Step2NextEvent" max_length="4000" name="step2nextevent" type="string"/>
+        <element label="Technical Flow" max_length="32" name="technical_flow" reference="wf_workflow" type="reference"/>
+        <element choice="1" label="Track" max_length="40" name="track" type="choice">
+            <choice>
+                <element label="Sales" sequence="100" value="sales"/>
+                <element label="Marketing" sequence="200" value="marketing"/>
+                <element label="Partner Portal" sequence="300" value="partnerportal"/>
+                <element label="Professional Services" sequence="400" value="ps"/>
+                <element label="LMS" sequence="500" value="lms"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="technical_flow"/>
+        </index>
+    </element>
+</database>
