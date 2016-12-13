@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_snc_techdoc.TechnicalDocumentUtil</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>TechnicalDocumentUtil</name>
+        <script><![CDATA[var TechnicalDocumentUtil = Class.create();
+TechnicalDocumentUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	startWorkflow: function() {
+		var context = null;
+		try{
+			var wfId = this.getParameter('sysparm_wf');
+			var wfAPI = new global.Workflow();
+			context = wfAPI.startFlow(wfId);
+		}catch(ex){
+			gs.error('Error occurred while initializing the workflow context.' + ex);
+		}
+		return (context)?context.sys_id:'';
+	},
+	
+	setProperty: function(key, value) {
+		var gr = new GlideRecord('x_snc_techdoc_cxt_properties');
+		gr.addQuery('key',key);
+		gr.query();
+		if(gr.next()){
+			gr.value = value;
+		}else{
+			gr.initialize();
+			gr.key = key;
+			gr.value = value;			
+		}
+		gr.update();
+	},
+	
+	workFlowChange: function() {
+		var result = false;
+		var useCaseId = this.getParameter('sysparm_usecase_id');
+		var wfCtxId = this.getParameter('sysparm_ctx_id');
+		var step = this.getParameter('sysparm_step');
+		gs.info('**** workFlowChange : params = ' + useCaseId + '::' + wfCtxId + '::' + step);
+		var gr = new GlideRecord('x_snc_techdoc_usecases');
+		gr.get(useCaseId);
+		gs.info('**** workFlowChange : usecase = ' + gr.getRowCount());
+		if(gr.isValidRecord()){
+			gs.info('**** workFlowChange : step = ' + step);
+			var steps = gr.step2nextevent.split(',');
+			gs.info('**** workFlowChange : steps = ' + steps);
+			for(var indx=0;indx<steps.length;indx++) {
+				gs.info('**** workFlowChange : steps[indx] = ' + steps[indx]);
+				if(steps[indx] == step) {
+					var w = new global.Workflow();
+					var ctxGr = new GlideRecord('wf_context');
+					ctxGr.get(wfCtxId);
+					gs.info('**** workFlowChange : ctx = ' + ctxGr.scratchpad.next);
+					//gs.setProperty(ctxGr.scratchpad.next, 'true');
+					this.setProperty(ctxGr.scratchpad.next, 'true');
+					gs.info('**** workFlowChange : set property');
+					w.broadcastEvent(wfCtxId, 'update');
+					gs.info('**** workFlowChange : result = true');
+					result = true;
+					break;
+				}
+			}
+		}
+		return result;
+	},
+	
+	popMessages: function() {
+		var result = '';
+		var useCaseId = this.getParameter('sysparm_usecase_id');
+		var wfCtxId = this.getParameter('sysparm_ctx_id');
+		var step = this.getParameter('sysparm_step');
+		gs.info('**** workFlowChange : params = ' + useCaseId + '::' + wfCtxId + '::' + step);
+		var ctxGr = new GlideRecord('wf_context');
+		ctxGr.get(wfCtxId);
+		result = JSON.stringify(ctxGr.scratchpad.messages);
+		var w = new global.Workflow();
+		w.broadcastEvent(wfCtxId, 'update');
+		return result;
+	},
+	
+	stepandDescription:function(){
+		var useCaseId = this.getParameter('sysparm_usecase_id');
+		var step = this.getParameter('sysparm_step');
+		
+		var stepsQuery = new GlideRecord('x_snc_techdoc_steps');
+		stepsQuery.addQuery('use_case',useCaseId);
+		stepsQuery.addQuery('step_number',step);
+		stepsQuery.addQuery('active','true');
+		stepsQuery.addQuery('step_description','!=','');
+		stepsQuery.query();
+		if(stepsQuery.next())
+			return stepsQuery.step_description;
+		else
+			return "";
+		
+	},
+	type: 'TechnicalDocumentUtil'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-12-05 03:40:36</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>555ccef04f6faa004172fc728110c771</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>TechnicalDocumentUtil</sys_name>
+        <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
+        <sys_update_name>sys_script_include_555ccef04f6faa004172fc728110c771</sys_update_name>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:01:27</sys_updated_on>
+        <u_orig_script/>
+    </sys_script_include>
+</record_update>

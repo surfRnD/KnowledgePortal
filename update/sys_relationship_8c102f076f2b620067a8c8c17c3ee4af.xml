@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_snc_techdoc_usecases</basic_apply_to>
+        <basic_query_from>x_snc_techdoc_steps</basic_query_from>
+        <insert_callback/>
+        <name>Adding Steps to Tech Document</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	// Add your code here, such as current.addQuery(field, value);
+	
+	current.addQuery('use_case', parent.sys_id);
+
+})(current, parent);]]></query_with>
+        <reference_field>use_case</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 09:37:38</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>8c102f076f2b620067a8c8c17c3ee4af</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Adding Steps to Tech Document</sys_name>
+        <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
+        <sys_update_name>sys_relationship_8c102f076f2b620067a8c8c17c3ee4af</sys_update_name>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 10:49:21</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=8c102f076f2b620067a8c8c17c3ee4af"/>
+</record_update>

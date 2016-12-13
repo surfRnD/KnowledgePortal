@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Steps" max_length="40" name="x_snc_techdoc_steps" type="collection">
+        <element default="true" display="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Step Description" max_length="4000" name="step_description" type="string"/>
+        <element label="Step Number" max_length="3" name="step_number" type="string"/>
+        <element label="Use Case" max_length="32" name="use_case" read_only="true" reference="x_snc_techdoc_usecases" type="reference"/>
+        <index name="index">
+            <element name="use_case"/>
+        </index>
+    </element>
+</database>

@@ -10,13 +10,14 @@ var stepCount = 0;
 var wfId = location.href.parseQuery()['sysparm_wf'];
 startWorkflow();
 var init = false;
+var resourceClicked = false;
 function preprocess() {
 	$j('body').append('<div id="overlay" class="overlay">');
 	setTimeout(window.focus(),2);
 }
 
 function resizeFrames() {
-	$j(document.getElementById('technical-demo')).removeClass('hide');	
+	$j(document.getElementById('technical-demo')).removeClass('hide');
 	$j(document.getElementById('technical-demo')).addClass('rightpane');
 	$j(document.getElementById('activityDetails')).removeClass('hide');
 	$j('#hideWhatfixButtons').addClass('hideWhatfixButtons');
@@ -27,97 +28,123 @@ function resizeFrames() {
 }
 
 function startWorkflow(){
-	var ga = new GlideAjax('global.TechnicalDocumentUtil');
+	var ga = new GlideAjax('x_snc_techdoc.TechnicalDocumentUtil');
 	ga.addParam('sysparm_name','startWorkflow');
 	console.log(wfId);
 	ga.addParam('sysparm_wf', wfId);
 	ga.getXML(updateIframeSrc);
 }
 function updateIframeSrc(response) {
-   var contextId = response.responseXML.documentElement.getAttribute("answer");
-   console.log(contextId);
-   currentCtxId = contextId;
-   $j('#technical-demo').attr('src','/context_workflow.do?sysparm_sys_id=' + contextId);
+	var contextId = response.responseXML.documentElement.getAttribute("answer");
+	console.log(contextId);
+	currentCtxId = contextId;
+	$j('#technical-demo').attr('src','/context_workflow.do?sysparm_sys_id=' + contextId);
 }
 
 
 var demoWindow = document.getElementById('functional-demo').contentWindow;
 var myConfObj = {
-  iframeMouseOver : false
-};
+	iframeMouseOver : false
+	};
 
 $j(window).blur(function(){
-  if(!init) {
-	 $j('.activityDetails .activity-li').live('click',function() { 
-		 var displayVal = $j(this).find('#details').css('display');
-		 displayVal = (displayVal == 'block')?'none':'block';
-		 $j(this).find('#details').css('display', displayVal);		 		 
-	 });	  
-	 $j('.screen_mode').live('click', function() {
-		if($j('.activityDetails').css('top') == '0px') {
-			$j('.activityDetails').css({'top':'462px','width': '622px','height': '400px'}); 
-			$j('.rightpane').css('display','block');
-		}else {
-			$j('.activityDetails').css({'top':'0','width': '100%','height': '870px'}); 
-			$j('.rightpane').css('display','none');
-		}
-
-	 });
-	 init = true;
-  }
- 
-  if(myConfObj.iframeMouseOver){
-	stepCount = stepCount + 1;
-    console.log('Step = ' + stepCount);
-	var ga = new GlideAjax('global.TechnicalDocumentUtil');
-	ga.addParam('sysparm_name','workFlowChange');
-	ga.addParam('sysparm_usecase_id',useCaseId);
-	ga.addParam('sysparm_ctx_id',currentCtxId);	  
-	ga.addParam('sysparm_step', stepCount);
-	$j('#overlay').css('display', 'block');
-	ga.getXML(workFlowChange);  
-	setTimeout(resetWindowFocus,0);
-  }
+	if(!init) {
+		$j('.activityDetails .activity-li').live('click',function() {
+			if(!resourceClicked) {
+				var displayVal = $j(this).find('#details').css('display');
+				displayVal = (displayVal == 'block')?'none':'block';
+				$j(this).find('#details').css('display', displayVal);				
+			}else {
+				setTimeout(function(){resourceClicked = false;},0);
+			}
+			
+		});
+		$j('.screen_mode').live('click', function() {
+			if($j('.activityDetails').css('top') == '0px') {
+				$j('.activityDetails').css({'top':'462px','width': '622px','height': '400px'});
+				$j('.rightpane').css('display','block');
+			}else {
+				$j('.activityDetails').css({'top':'0','width': '100%','height': '870px'});
+				$j('.rightpane').css('display','none');
+			}
+			
+		});
+		$j('.resource').live('click', function() {
+			resourceClicked = true;
+			var hostname = $j(this).attr('url').split('/')[2].split('.')[0];
+			var url = $j(this).attr('url').replace(hostname, "surfdev");
+			window.open(url);
+		});
+		init = true;
+	}
+	
+	if(myConfObj.iframeMouseOver){
+		stepCount = stepCount + 1;
+		console.log('Step = ' + stepCount);
+		
+		var ga = new GlideAjax('x_snc_techdoc.TechnicalDocumentUtil');
+		ga.addParam('sysparm_name','stepandDescription');
+		ga.addParam('sysparm_usecase_id',useCaseId);
+		ga.addParam('sysparm_step', stepCount);
+		ga.getXML(descFlowChange);
+		
+		
+		var ga = new GlideAjax('x_snc_techdoc.TechnicalDocumentUtil');
+		ga.addParam('sysparm_name','workFlowChange');
+		ga.addParam('sysparm_usecase_id',useCaseId);
+		ga.addParam('sysparm_ctx_id',currentCtxId);
+		ga.addParam('sysparm_step', stepCount);
+		$j('#overlay').css('display', 'block');
+		ga.getXML(workFlowChange);
+		setTimeout(resetWindowFocus,0);
+	}
 });
 
 function workFlowChange(response){
 	var result = response.responseXML.documentElement.getAttribute("answer");
 	if(result == 'true') {
-		//Refresh the workflow		
+		//Refresh the workflow
 		$j(document.getElementById('technical-demo').contentDocument).find('.icon-refresh')[0].click();
-			var ga = new GlideAjax('global.TechnicalDocumentUtil');
-			ga.addParam('sysparm_name','popMessages');
-			ga.addParam('sysparm_usecase_id',useCaseId);
-			ga.addParam('sysparm_ctx_id',currentCtxId);	  
-			$j('#overlay').css('display', 'block');
-			ga.getXML(updateActivityDetails);
-
+		var ga = new GlideAjax('x_snc_techdoc.TechnicalDocumentUtil');
+		ga.addParam('sysparm_name','popMessages');
+		ga.addParam('sysparm_usecase_id',useCaseId);
+		ga.addParam('sysparm_ctx_id',currentCtxId);
+		$j('#overlay').css('display', 'block');
+		ga.getXML(updateActivityDetails);
+		
 		$j('#overlay').css('display', 'none');
 	}
 	$j('#overlay').css('display', 'none');
 }
 
-function updateActivityDetails(response){
-		var result = response.responseXML.documentElement.getAttribute("answer");
-		if(result) {
-			var messages = JSON.parse(result);
-			if(messages && messages.length > 0) {
-				$j(".activityDetails .activity-ul").remove();
-				$j(".activityDetails").append("<ul class='activity-ul'/>");
-				
-				for(var indx=0; indx<messages.length; indx++) {	
-					if(messages[indx] && messages[indx]['name'].length > 0) {						
-						$j(".activityDetails .activity-ul").append("<li class='activity-li'><span id='header'>" + messages[indx]['name'] + "</span><div id='details' class='details' style='display:none;'>" + 
-						((messages[indx]['desc'])?"<span id='desc'><ul class='row'<li id='label'>Description</li><li id='value'>" + messages[indx]['desc'] + "</li></ul></span>": "") + 
-						((messages[indx]['script'])?"<span id='script'><ul class='row'><li id='label'>Notes</li></br><li id='value'><pre><code>" + messages[indx]['script'] + "</code></pre></li></ul></span>":"") + 
-						((messages[indx]['type'])?"<span id='type'><ul class='row'><li id='label'>Artifact Type</li><li id='value'>" + messages[indx]['type'] + "</li></ul></span>":"") + 
-						((messages[indx]['url'])?"<span id='url'><ul class='row'><li id='label'>Artifact URL</li><li id='value'>" + messages[indx]['url'] + "</li></span>":"") + 
-					  "</div></li>");				
-					}		
-				}
+function descFlowChange(response){
+	var result = response.responseXML.documentElement.getAttribute("answer");
+	if(result != '') {
+		speak(result);
+	}
+}
 
+function updateActivityDetails(response){
+	var result = response.responseXML.documentElement.getAttribute("answer");
+	if(result) {
+		var messages = JSON.parse(result);
+		if(messages && messages.length > 0) {
+			$j(".activityDetails .activity-ul").remove();
+			$j(".activityDetails").append("<ul class='activity-ul'/>");
+			
+			for(var indx=0; indx<messages.length; indx++) {
+				if(messages[indx] && messages[indx]['name'].length > 0) {
+					$j(".activityDetails .activity-ul").append("<li class='activity-li'><span id='header'>" + messages[indx]['name'] + "</span><div id='details' class='details' style='display:none;'>" +
+					((messages[indx]['desc'])?"<span id='desc'><ul class='row'<li id='label'>Description</li><li id='value'>" + messages[indx]['desc'] + "</li></ul></span>": "") +
+					((messages[indx]['script'])?"<span id='script'><ul class='row'><li id='label'>Notes</li></br><li id='value'><pre><code>" + messages[indx]['script'] + "</code></pre></li></ul></span>":"") +
+					((messages[indx]['type'])?"<span id='type'><ul class='row'><li id='label'>Artifact Type</li><li id='value'>" + messages[indx]['type'] + "</li></ul></span>":"") +
+					((messages[indx]['URL'])?"<span id='url'><ul class='row'><li id='label'>Artifact URL</li><li id='value'><a class='resource' href='#' url='" + messages[indx]['URL'] + "'>click here</a></li></span>":"") +
+					"</div></li>");
+				}
 			}
+			
 		}
+	}
 }
 
 function resetWindowFocus(){
@@ -132,7 +159,28 @@ $j(document.getElementById('functional-demo')).mouseover(function(){
 $j(document.getElementById('functional-demo')).mouseout(function(){
 	myConfObj.iframeMouseOver = false;
 });
-]]></client_script>
+
+
+// say a message
+window.speak = function(text, callback) {
+    var u = new SpeechSynthesisUtterance();
+    u.text = text;
+    u.lang = 'en-US';
+ 
+    u.onend = function () {
+        if (callback) {
+            callback();
+        }
+    };
+ 
+    u.onerror = function (e) {
+        if (callback) {
+            callback(e);
+        }
+    };
+ 
+    speechSynthesis.speak(u);
+}]]></client_script>
         <description/>
         <direct>false</direct>
         <endpoint>x_snc_techdoc_flow-nav.do</endpoint>
@@ -279,14 +327,14 @@ li#value {
         <sys_created_on>2016-11-29 18:58:27</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>d8d3220b4f536a004172fc728110c74b</sys_id>
-        <sys_mod_count>115</sys_mod_count>
+        <sys_mod_count>125</sys_mod_count>
         <sys_name>flow-nav</sys_name>
         <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
         <sys_update_name>sys_ui_page_d8d3220b4f536a004172fc728110c74b</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-12-04 12:48:34</sys_updated_on>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:01:38</sys_updated_on>
     </sys_ui_page>
 </record_update>

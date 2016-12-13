@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Context Properties" max_length="40" name="x_snc_techdoc_cxt_properties" type="collection">
+        <element label="Key" max_length="40" name="key" type="string"/>
+        <element label="Value" max_length="40" name="value" type="string"/>
+    </element>
+</database>
