@@ -1,0 +1,5 @@
+Steps to install the app;
+  1. Using studio's git integration, apply the remote changes from this repository.
+  2. Apply the below files manually ( as they below to the global scope ):
+      a. PointCut Activity Definition
+      
