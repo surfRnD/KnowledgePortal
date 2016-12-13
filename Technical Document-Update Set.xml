@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2016-12-13 18:12:32">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>TechDoc</name>
+<origin_sys_id/>
+<release_date/>
+<remote_sys_id>e55a5e6b4f23a2004172fc728110c77c</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-12-13 18:12:31</sys_created_on>
+<sys_id>eac0aaeb4f23a2004172fc728110c730</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-12-13 18:12:31</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>wf_activity_variable_6f593faa4f9b2a004172fc728110c78d</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="wf_activity_variable"&gt;&lt;wf_activity_variable action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Script Code&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;script_code&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Script"&gt;script&lt;/internal_type&gt;&lt;label&gt;Notes&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="PointCut"&gt;fd88f7aa4f9b2a004172fc728110c7f1&lt;/model&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;name&gt;var__m_fd88f7aa4f9b2a004172fc728110c7f1&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;wf_activity_variable&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-11-28 11:50:17&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;6f593faa4f9b2a004172fc728110c78d&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Script Code&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;wf_activity_variable_6f593faa4f9b2a004172fc728110c78d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-12-02 07:08:28&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/wf_activity_variable&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="TechDoc">eac0aaeb4f23a2004172fc728110c730</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-12-13 18:12:31</sys_created_on>
+<sys_id>22c0aaeb4f23a2004172fc728110c731</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-12-13 18:12:31</sys_updated_on>
+<table/>
+<target_name>Script Code</target_name>
+<type>Activity Variables</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>wf_activity_variable_76ce53ff4f9f6a004172fc728110c77d</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="wf_activity_variable"&gt;&lt;wf_activity_variable action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;URL&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;URL&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="URL"&gt;url&lt;/internal_type&gt;&lt;label&gt;URL&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;250&lt;/max_length&gt;&lt;model display_value="PointCut"&gt;fd88f7aa4f9b2a004172fc728110c7f1&lt;/model&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;name&gt;var__m_fd88f7aa4f9b2a004172fc728110c7f1&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;wf_activity_variable&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-12-02 07:06:31&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;76ce53ff4f9f6a004172fc728110c77d&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;URL&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;wf_activity_variable_76ce53ff4f9f6a004172fc728110c77d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-12-02 12:26:51&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/wf_activity_variable&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="TechDoc">eac0aaeb4f23a2004172fc728110c730</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-12-13 18:12:31</sys_created_on>
+<sys_id>62c0aaeb4f23a2004172fc728110c731</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-12-13 18:12:31</sys_updated_on>
+<table/>
+<target_name>URL</target_name>
+<type>Activity Variables</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_8a4f16eb4f23a2004172fc728110c7ae</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="8a4f16eb4f23a2004172fc728110c7ae" sys_domain="global" table="x_snc_techdoc_cxt_properties" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-12-13 18:05:56</sys_created_on><sys_id>0a4f16eb4f23a2004172fc728110c7af</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_snc_techdoc_cxt_properties" sys_domain="global" view="Default view">8a4f16eb4f23a2004172fc728110c7ae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-12-13 18:05:56</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>key</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-12-13 18:05:56</sys_created_on><sys_id>8a4f16eb4f23a2004172fc728110c7af</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_snc_techdoc_cxt_properties" sys_domain="global" view="Default view">8a4f16eb4f23a2004172fc728110c7ae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-12-13 18:05:56</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-12-13 18:05:56</sys_created_on><sys_id>0e4f16eb4f23a2004172fc728110c7af</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_snc_techdoc_cxt_properties" sys_domain="global" view="Default view">8a4f16eb4f23a2004172fc728110c7ae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-12-13 18:05:56</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>value</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-12-13 18:05:56</sys_created_on><sys_id>8e4f16eb4f23a2004172fc728110c7af</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_snc_techdoc_cxt_properties" sys_domain="global" view="Default view">8a4f16eb4f23a2004172fc728110c7ae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-12-13 18:05:56</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2016-12-13 18:05:56</sys_created_on><sys_id>024f16eb4f23a2004172fc728110c7b0</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_snc_techdoc_cxt_properties" sys_domain="global" view="Default view">8a4f16eb4f23a2004172fc728110c7ae</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-12-13 18:05:56</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_snc_techdoc_cxt_properties</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2016-12-13 18:05:56</sys_created_on><sys_customer_update>true</sys_customer_update><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8a4f16eb4f23a2004172fc728110c7ae</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_techdoc_cxt_properties</sys_name><sys_overrides/><sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package><sys_policy/><sys_replace_on_upgrade>false</sys_replace_on_upgrade><sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope><sys_update_name>sys_ui_section_8a4f16eb4f23a2004172fc728110c7ae</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2016-12-13 18:05:56</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<remote_update_set display_value="TechDoc">eac0aaeb4f23a2004172fc728110c730</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-12-13 18:12:31</sys_created_on>
+<sys_id>6ec0aaeb4f23a2004172fc728110c730</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-12-13 18:12:31</sys_updated_on>
+<table>x_snc_techdoc_cxt_properties</table>
+<target_name>Context Properties</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>wf_activity_variable_97b933ea4f9b2a004172fc728110c72b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="wf_activity_variable"&gt;&lt;wf_activity_variable action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Description&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;Description&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Description&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="PointCut"&gt;fd88f7aa4f9b2a004172fc728110c7f1&lt;/model&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;name&gt;var__m_fd88f7aa4f9b2a004172fc728110c7f1&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;400&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;wf_activity_variable&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-11-28 11:51:50&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;97b933ea4f9b2a004172fc728110c72b&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Description&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;wf_activity_variable_97b933ea4f9b2a004172fc728110c72b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-12-01 10:31:33&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/wf_activity_variable&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="TechDoc">eac0aaeb4f23a2004172fc728110c730</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-12-13 18:12:31</sys_created_on>
+<sys_id>a2c0aaeb4f23a2004172fc728110c731</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-12-13 18:12:31</sys_updated_on>
+<table/>
+<target_name>Description</target_name>
+<type>Activity Variables</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>wf_activity_definition_03ab92ab4f23a2004172fc728110c762</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="wf_activity_definition"&gt;&lt;wf_activity_definition action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;action&gt;false&lt;/action&gt;&lt;attributes/&gt;&lt;base_provider/&gt;&lt;category&gt;Conditions&lt;/category&gt;&lt;default_height/&gt;&lt;default_width/&gt;&lt;description&gt;The Wait for condition activity causes the workflow to wait until the current record matches the specified condition.&amp;#13;
+ &amp;#13;
+Use this activity to pause a workflow indefinitely until a particular condition is met.&amp;#13;
+ &amp;#13;
+The activity state tells the workflow engine how to handle the record being executed. Possible state values are:&amp;#13;
+*Executing: the workflow engine starts the 'onExecute' function of the activity.&amp;#13;
+*Waiting: the workflow engine ignores the activity until a specific event to restart the activity is fired. &amp;#13;
+*Finished: the activity finished running. See the result value for the outcome of the activity.&amp;#13;
+*Cancelled: this activity, or the workflow that contains this activity, was canceled.&amp;#13;
+*Error: a JavaScript error occurred. Review the logs for error details.&amp;#13;
+&amp;#13;
+You can assign a result value using 'activity.result' from within a script field of the activity. The activity transitions when the result value is 'true'.&amp;#13;
+ &amp;#13;
+Keep in mind: &amp;#13;
+*You cannot use this activity to pause a workflow for a specific time period.  &lt;/description&gt;&lt;image&gt;images/heisenberg_icons/workflow/wait_for.png&lt;/image&gt;&lt;js_class_name&gt;PointCutWait&lt;/js_class_name&gt;&lt;name&gt;PointCutWait&lt;/name&gt;&lt;script&gt;&lt;![CDATA[// Workflow activity definition handler class
+//
+// Implement activity definition handling in the onExecute method
+
+// Implement any event handlers for the activity definition as a method named 'on[event_name]'
+//     For example, to handle the 'cancel' event, implement an 'onCancel' method
+//
+
+var PointCutWaitActivityHandler = Class.create();
+PointCutWaitActivityHandler.prototype = Object.extendsObject(WFActivityHandler, {
+   
+   initialize: function() {
+      WFActivityHandler.prototype.initialize.call(this);
+   },
+   
+   onExecute: function() {
+      // stay waiting until true or fault
+      activity.state = "waiting";
+      this.onUpdate();
+   },
+   
+   onUpdate: function() {
+      var condition = "var gr = new global.GlideRecord('x_snc_techdoc_cxt_properties'); gr.addQuery('key',workflow.scratchpad.next); gr.query(); if(gr.next() &amp;&amp; gr.value == 'true'){  answer = true; }";      
+      var answer = this.runScript(condition);
+      if(answer === true){
+		  activity.state = "finished";
+	  }         
+   },
+   
+   type: 'PointCutWaitActivityHandler'
+});]]&gt;&lt;/script&gt;&lt;style/&gt;&lt;sys_class_name&gt;wf_activity_definition&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-12-13 17:50:10&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;03ab92ab4f23a2004172fc728110c762&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;PointCutWait&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;wf_activity_definition_03ab92ab4f23a2004172fc728110c762&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-12-13 18:09:54&lt;/sys_updated_on&gt;&lt;table&gt;global&lt;/table&gt;&lt;version_container_id/&gt;&lt;/wf_activity_definition&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=03ab92ab4f23a2004172fc728110c762"/&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="TechDoc">eac0aaeb4f23a2004172fc728110c730</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-12-13 18:12:31</sys_created_on>
+<sys_id>aec0aaeb4f23a2004172fc728110c730</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-12-13 18:12:31</sys_updated_on>
+<table>global</table>
+<target_name>PointCutWait</target_name>
+<type>Workflow Activity Definition</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>DELETE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>wf_activity_variable_984e9fbf4f9f6a004172fc728110c773</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="wf_activity_variable"&gt;&lt;wf_activity_variable action="DELETE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label&gt;Notes&lt;/column_label&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;Notes&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Notes&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="PointCut"&gt;fd88f7aa4f9b2a004172fc728110c7f1&lt;/model&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;name&gt;var__m_fd88f7aa4f9b2a004172fc728110c7f1&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;wf_activity_variable&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-12-02 07:04:11&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;984e9fbf4f9f6a004172fc728110c773&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Notes&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;wf_activity_variable_984e9fbf4f9f6a004172fc728110c773&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-12-02 07:04:11&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/wf_activity_variable&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="TechDoc">eac0aaeb4f23a2004172fc728110c730</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-12-13 18:12:31</sys_created_on>
+<sys_id>e2c0aaeb4f23a2004172fc728110c731</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-12-13 18:12:31</sys_updated_on>
+<table/>
+<target_name>Notes</target_name>
+<type>Activity Variables</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>wf_activity_definition_fd88f7aa4f9b2a004172fc728110c7f1</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="wf_activity_definition"&gt;&lt;wf_activity_definition action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;action&gt;false&lt;/action&gt;&lt;attributes/&gt;&lt;base_provider/&gt;&lt;category&gt;CodeFlow Record&lt;/category&gt;&lt;default_height/&gt;&lt;default_width/&gt;&lt;description/&gt;&lt;image&gt;images/icons/rules.gif&lt;/image&gt;&lt;js_class_name&gt;PointCut&lt;/js_class_name&gt;&lt;name&gt;PointCut&lt;/name&gt;&lt;script&gt;&lt;![CDATA[// Workflow activity definition handler class
+//
+// Implement activity definition handling in the onExecute method
+//
+// Implement any event handlers for the activity definition as a method named 'on[event_name]'
+//     For example, to handle the 'cancel' event, implement an 'onCancel' method
+//
+
+var PointCutActivityHandler = Class.create();
+PointCutActivityHandler.prototype = Object.extendsObject(WFActivityHandler, {
+	
+	initialize: function() {
+		WFActivityHandler.prototype.initialize.call(this);
+	},
+	
+	onExecute: function() {
+		if(!workflow.scratchpad.messages){
+			workflow.scratchpad.messages = [];
+		}
+		workflow.scratchpad.messages.push({'name':''+activity.name, 'desc':'' + activity.vars.Description, 'script':'' + activity.vars.script_code, 'type':'' + activity.vars["Artifact Type"], 'URL':'' + activity.vars.URL});
+		gs.log('**** activityURL = ' + activity.vars.URL);
+		if(!workflow.scratchpad.next || workflow.scratchpad.next.length == 0) {
+			var randStr = Math.random().toString(36);
+			this.setProperty(randStr, 'false');
+			workflow.scratchpad.next = randStr;
+		}else{
+			this.setProperty(workflow.scratchpad.next, 'false');
+		}
+		
+	},
+	
+	setProperty: function(key, value) {
+		var gr = new global.GlideRecord('x_snc_techdoc_cxt_properties');
+		gr.addQuery('key',key);
+		gr.query();
+		
+		if(gr.next()){
+			gr.value = value;
+		}else{
+			gr.initialize();
+			gr.key = key;
+			gr.value = value;
+		}
+		gr.update();
+	},
+	
+	type: 'PointCutActivityHandler'
+});]]&gt;&lt;/script&gt;&lt;style/&gt;&lt;sys_class_name&gt;wf_activity_definition&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2016-11-28 11:47:19&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;true&lt;/sys_customer_update&gt;&lt;sys_id&gt;fd88f7aa4f9b2a004172fc728110c7f1&lt;/sys_id&gt;&lt;sys_mod_count&gt;24&lt;/sys_mod_count&gt;&lt;sys_name&gt;PointCut&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;wf_activity_definition_fd88f7aa4f9b2a004172fc728110c7f1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2016-12-05 07:36:41&lt;/sys_updated_on&gt;&lt;table&gt;global&lt;/table&gt;&lt;version_container_id/&gt;&lt;/wf_activity_definition&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=fd88f7aa4f9b2a004172fc728110c7f1"/&gt;&lt;/record_update&gt;</payload>
+<remote_update_set display_value="TechDoc">eac0aaeb4f23a2004172fc728110c730</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2016-12-13 18:12:31</sys_created_on>
+<sys_id>eec0aaeb4f23a2004172fc728110c730</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2016-12-13 18:12:31</sys_updated_on>
+<table>global</table>
+<target_name>PointCut</target_name>
+<type>Workflow Activity Definition</type>
+<update_domain>global</update_domain>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
