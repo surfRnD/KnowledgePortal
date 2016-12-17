@@ -60,7 +60,7 @@
         <sys_class_name>sys_scope_script_access</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-28 11:03:54</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>e5deabe64f9b2a004172fc728110c7e4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>WFActivityHandler</sys_name>

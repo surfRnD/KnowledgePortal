@@ -14,7 +14,7 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>shyam.j</sys_created_by>
             <sys_created_on>2016-12-12 09:41:21</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>093267476f2b620067a8c8c17c3ee45f</sys_id>

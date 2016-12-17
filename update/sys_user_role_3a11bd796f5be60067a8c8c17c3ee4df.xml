@@ -12,7 +12,7 @@
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-25 17:59:08</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>3a11bd796f5be60067a8c8c17c3ee4df</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>x_snc_techdoc_trace_user</sys_name>

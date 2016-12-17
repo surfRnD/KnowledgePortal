@@ -21,7 +21,7 @@
         <sys_class_name>sys_relationship</sys_class_name>
         <sys_created_by>shyam.j</sys_created_by>
         <sys_created_on>2016-12-12 09:37:38</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>8c102f076f2b620067a8c8c17c3ee4af</sys_id>
         <sys_mod_count>7</sys_mod_count>
         <sys_name>Adding Steps to Tech Document</sys_name>

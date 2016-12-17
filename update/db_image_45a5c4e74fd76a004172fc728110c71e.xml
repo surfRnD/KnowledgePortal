@@ -11,7 +11,7 @@
         <sys_class_name>db_image</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-30 20:39:17</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>45a5c4e74fd76a004172fc728110c71e</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>loading.gif</sys_name>

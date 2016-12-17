@@ -2,23 +2,23 @@
 <record_update table="ua_table_licensing_config">
     <ua_table_licensing_config action="INSERT_OR_UPDATE">
         <is_fulfillment>false</is_fulfillment>
-        <name>x_snc_techdoc_usecases</name>
-        <owner_condition table="x_snc_techdoc_usecases">sys_created_by=javascript:gs.getUserName()^EQ<item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserName()"/>
+        <name>x_snc_techdoc_steps</name>
+        <owner_condition table="x_snc_techdoc_steps">sys_created_by=javascript:gs.getUserName()^EQ<item endquery="false" field="sys_created_by" goto="false" newquery="false" operator="=" or="false" value="javascript:gs.getUserName()"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </owner_condition>
         <sys_class_name>ua_table_licensing_config</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2016-11-27 16:53:00</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
-        <sys_id>1125bbda4f972a004172fc728110c73e</sys_id>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 09:29:39</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>02037a704f37e2004172fc728110c7c4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>x_snc_techdoc_usecases</sys_name>
+        <sys_name>x_snc_techdoc_steps</sys_name>
         <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
-        <sys_update_name>ua_table_licensing_config_1125bbda4f972a004172fc728110c73e</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2016-11-27 16:53:00</sys_updated_on>
+        <sys_update_name>ua_table_licensing_config_02037a704f37e2004172fc728110c7c4</sys_update_name>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 09:29:39</sys_updated_on>
     </ua_table_licensing_config>
 </record_update>

@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-30 19:00:37</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>c42f2f9f4f976a004172fc728110c7d2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>wf_context</sys_name>

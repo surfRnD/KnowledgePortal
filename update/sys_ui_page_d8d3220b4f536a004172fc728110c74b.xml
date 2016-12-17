@@ -325,7 +325,7 @@ li#value {
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-29 18:58:27</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>d8d3220b4f536a004172fc728110c74b</sys_id>
         <sys_mod_count>125</sys_mod_count>
         <sys_name>flow-nav</sys_name>

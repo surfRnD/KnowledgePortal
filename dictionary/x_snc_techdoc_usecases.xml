@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element label="Use Cases" max_length="40" name="x_snc_techdoc_usecases" type="collection">
+    <element attributes="update_synch=true" extends="sys_metadata" label="Use Cases" max_length="40" name="x_snc_techdoc_usecases" type="collection">
         <element label="Description" max_length="4000" name="description" type="string"/>
         <element label="Feature" max_length="40" name="feature" type="string"/>
         <element label="Name" max_length="40" name="name" type="string"/>
