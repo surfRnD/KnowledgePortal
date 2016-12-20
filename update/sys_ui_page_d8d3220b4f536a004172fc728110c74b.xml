@@ -49,7 +49,7 @@ var myConfObj = {
 
 $j(window).blur(function(){
 	if(!init) {
-		$j('.activityDetails .activity-li').live('click',function() {
+		$j('.activityDetails .activity-li').on('click',function() {
 			if(!resourceClicked) {
 				var displayVal = $j(this).find('#details').css('display');
 				displayVal = (displayVal == 'block')?'none':'block';
@@ -59,7 +59,7 @@ $j(window).blur(function(){
 			}
 			
 		});
-		$j('.screen_mode').live('click', function() {
+		$j('.screen_mode').on('click', function() {
 			if($j('.activityDetails').css('top') == '0px') {
 				$j('.activityDetails').css({'top':'462px','width': '622px','height': '400px'});
 				$j('.rightpane').css('display','block');
@@ -69,7 +69,7 @@ $j(window).blur(function(){
 			}
 			
 		});
-		$j('.resource').live('click', function() {
+		$j('.resource').on('click', function() {
 			resourceClicked = true;
 			var hostname = $j(this).attr('url').split('/')[2].split('.')[0];
 			var url = $j(this).attr('url').replace(hostname, "surfdev");
@@ -325,16 +325,16 @@ li#value {
         <sys_class_name>sys_ui_page</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2016-11-29 18:58:27</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>d8d3220b4f536a004172fc728110c74b</sys_id>
-        <sys_mod_count>125</sys_mod_count>
+        <sys_mod_count>126</sys_mod_count>
         <sys_name>flow-nav</sys_name>
         <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
         <sys_update_name>sys_ui_page_d8d3220b4f536a004172fc728110c74b</sys_update_name>
-        <sys_updated_by>shyam.j</sys_updated_by>
-        <sys_updated_on>2016-12-12 12:01:38</sys_updated_on>
+        <sys_updated_by>chaitanya.s</sys_updated_by>
+        <sys_updated_on>2016-12-20 08:58:34</sys_updated_on>
     </sys_ui_page>
 </record_update>

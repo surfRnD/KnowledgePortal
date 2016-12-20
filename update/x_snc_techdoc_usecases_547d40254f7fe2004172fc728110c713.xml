@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="x_snc_techdoc_usecases">
+    <x_snc_techdoc_usecases action="INSERT_OR_UPDATE">
+        <description>A new user is inserted/created on SURF and synced to SABA</description>
+        <feature/>
+        <name>Insert User</name>
+        <navigator/>
+        <step2nextevent/>
+        <sys_class_name>x_snc_techdoc_usecases</sys_class_name>
+        <sys_created_by>manik.narula</sys_created_by>
+        <sys_created_on>2016-12-19 12:37:26</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>547d40254f7fe2004172fc728110c713</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Insert User</sys_name>
+        <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
+        <sys_update_name>x_snc_techdoc_usecases_547d40254f7fe2004172fc728110c713</sys_update_name>
+        <sys_updated_by>manik.narula</sys_updated_by>
+        <sys_updated_on>2016-12-19 12:37:26</sys_updated_on>
+        <technical_flow/>
+        <track>lms</track>
+    </x_snc_techdoc_usecases>
+</record_update>

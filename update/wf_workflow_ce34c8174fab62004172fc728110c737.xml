@@ -94,6 +94,7 @@
         <x>20</x>
         <y>20</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=0756c8574fab62004172fc728110c786"/>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Begin">0756c8574fab62004172fc728110c786</activity>
         <condition>true</condition>
@@ -143,6 +144,7 @@
         <x>651</x>
         <y>25</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=4b56c8574fab62004172fc728110c786"/>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Parallel Flow Launcher">35ef56111b211100adca1e094f071315</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -171,6 +173,205 @@
         <x>356</x>
         <y>19</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=0f56c8574fab62004172fc728110c786"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0f56c8574fab62004172fc728110c786</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>0356c8574fab62004172fc728110c788</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">0a2b9e591b221100adca1e094f07130e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0f56c8574fab62004172fc728110c786</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>0756c8574fab62004172fc728110c787</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value>9c38758e4f132a004172fc728110c79c</value>
+        <variable display_value="">d698838a1b121100adca1e094f071315</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0f56c8574fab62004172fc728110c786</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>0f56c8574fab62004172fc728110c788</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value>// This script can be used to provide the workflows(s) to use for each sub-flow execution.  If a single workflow is&#13;
+// to be used for every sub-flow then simply specify that name or ID here.  Otherwise, if separate workflows may&#13;
+// be needed, then perhaps use a WorkflowCoordinator instance, which can be created or referenced here.  &#13;
+//&#13;
+// -- Use one of the methods below --&#13;
+//&#13;
+// METHOD 1:  Provide a name of a workflow&#13;
+//&#13;
+//      'MyWorkflow'&#13;
+//&#13;
+//&#13;
+// METHOD 2:  Provide a sys_id of a workflow via a variable&#13;
+//&#13;
+//       myWorkflow;&#13;
+//&#13;
+//&#13;
+// METHOD 3:  Create a WorkflowCoordinator with parameters for each flow to launch.  &#13;
+//                     The first two sub-flows will be the AllocateServer workflow and the last will be the SetupLoadBalancer workflow&#13;
+//&#13;
+//&#13;
+//        coordinator = new WorkflowCoordinator( {workflow:'AllocateServer'} );&#13;
+//        coordinator.add( {u_serverName:'Tomcat1'} );&#13;
+//        coordinator.add( {u_serverName:'Tomcat2'} );&#13;
+//        coordinator.add( {u_portlist: ['8080','8081,'8082'] },  'SetupLoadBalancer' );&#13;
+//&#13;
+//        coordinator;         // THIS MUST BE THE LAST LINE&#13;
+//&#13;
+//&#13;
+// METHOD 4:  Have a script include return a workflow name or ID or have it return a WorkflowCoordinator instance.&#13;
+//&#13;
+//         var siteType = 'BackupSite';&#13;
+//         var numTomcats = 4;&#13;
+//&#13;
+//         SiteBuilder.build(siteType, numTomcats);     // LAST LINE!  This function returns a pre-configured WorkflowCoordinator&#13;
+//                          &#13;
+&#13;
+</value>
+        <variable display_value="">22dea7431b211100adca1e094f0713f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0f56c8574fab62004172fc728110c786</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>4356c8574fab62004172fc728110c787</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value>// To access the set of completed workflows use the 'coordinator' variable.&#13;
+//&#13;
+//  var flow1Result = coordinator.getFlow(1).output;&#13;
+//&#13;
+</value>
+        <variable display_value="">e47e76101b221100adca1e094f07134e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0f56c8574fab62004172fc728110c786</document_key>
+        <order>800</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>4b56c8574fab62004172fc728110c788</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">662e36101b221100adca1e094f0713a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0f56c8574fab62004172fc728110c786</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>4f56c8574fab62004172fc728110c787</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value>25</value>
+        <variable display_value="">e44186731b211100adca1e094f0713e0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0f56c8574fab62004172fc728110c786</document_key>
+        <order>700</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>8756c8574fab62004172fc728110c788</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value>// To access the flow that completed, use the 'flow' variable.&#13;
+//  &#13;
+//     var flowOutput = flow.output;&#13;
+//&#13;
+</value>
+        <variable display_value="">006b9e591b221100adca1e094f0713a1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0f56c8574fab62004172fc728110c786</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>8b56c8574fab62004172fc728110c787</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value>5</value>
+        <variable display_value="">7b81c6731b211100adca1e094f07136e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0f56c8574fab62004172fc728110c786</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>8f56c8574fab62004172fc728110c786</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">7608dbca1b121100adca1e094f071355</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0f56c8574fab62004172fc728110c786</document_key>
+        <order>350</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>c356c8574fab62004172fc728110c788</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">428bf90eff1331009267ffffffffff80</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0f56c8574fab62004172fc728110c786</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>c756c8574fab62004172fc728110c787</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value/>
+        <variable display_value="">713142e11b211100adca1e094f0713f0</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>0f56c8574fab62004172fc728110c786</document_key>
@@ -418,6 +619,77 @@
         <x>146</x>
         <y>157</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=0356c8574fab62004172fc728110c785"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0356c8574fab62004172fc728110c785</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>0b56c8574fab62004172fc728110c785</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value/>
+        <variable display_value="">6f593faa4f9b2a004172fc728110c78d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0356c8574fab62004172fc728110c785</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>4756c8574fab62004172fc728110c785</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value/>
+        <variable display_value="">d2a9ffaa4f9b2a004172fc728110c704</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0356c8574fab62004172fc728110c785</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>8356c8574fab62004172fc728110c785</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value/>
+        <variable display_value="">97b933ea4f9b2a004172fc728110c72b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0356c8574fab62004172fc728110c785</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>8f56c8574fab62004172fc728110c785</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value/>
+        <variable display_value="">76ce53ff4f9f6a004172fc728110c77d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0356c8574fab62004172fc728110c785</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-12 12:19:19</sys_created_on>
+        <sys_id>cb56c8574fab62004172fc728110c785</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-12 12:19:19</sys_updated_on>
+        <value/>
+        <variable display_value="">8389bfaa4f9b2a004172fc728110c706</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>0356c8574fab62004172fc728110c785</document_key>
