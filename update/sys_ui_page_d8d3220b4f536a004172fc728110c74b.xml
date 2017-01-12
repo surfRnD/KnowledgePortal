@@ -11,9 +11,12 @@ var wfId = location.href.parseQuery()['sysparm_wf'];
 startWorkflow();
 var init = false;
 var resourceClicked = false;
+var wfLoaded = false;
 function preprocess() {
-	$j('body').append('<div id="overlay" class="overlay">');
-	setTimeout(window.focus(),2);
+	if(!wfLoaded) {
+		$j('body').append('<div id="overlay" class="overlay">');
+		setTimeout(window.focus(),2);		
+	}
 }
 
 function resizeFrames() {
@@ -24,7 +27,8 @@ function resizeFrames() {
 	setTimeout(function(){
 		$j("#overlay").css('display','none');
 		window.focus();
-	},3000);
+		wfLoaded = true;
+	},5000);
 }
 
 function startWorkflow(){
@@ -48,17 +52,7 @@ var myConfObj = {
 	};
 
 $j(window).blur(function(){
-	if(!init) {
-		$j('.activityDetails .activity-li').on('click',function() {
-			if(!resourceClicked) {
-				var displayVal = $j(this).find('#details').css('display');
-				displayVal = (displayVal == 'block')?'none':'block';
-				$j(this).find('#details').css('display', displayVal);				
-			}else {
-				setTimeout(function(){resourceClicked = false;},0);
-			}
-			
-		});
+	if(!init) {		
 		$j('.screen_mode').on('click', function() {
 			if($j('.activityDetails').css('top') == '0px') {
 				$j('.activityDetails').css({'top':'462px','width': '622px','height': '400px'});
@@ -89,7 +83,7 @@ $j(window).blur(function(){
 		ga.getXML(descFlowChange);
 		
 		
-		var ga = new GlideAjax('x_snc_techdoc.TechnicalDocumentUtil');
+		ga = new GlideAjax('x_snc_techdoc.TechnicalDocumentUtil');
 		ga.addParam('sysparm_name','workFlowChange');
 		ga.addParam('sysparm_usecase_id',useCaseId);
 		ga.addParam('sysparm_ctx_id',currentCtxId);
@@ -134,7 +128,7 @@ function updateActivityDetails(response){
 			
 			for(var indx=0; indx<messages.length; indx++) {
 				if(messages[indx] && messages[indx]['name'].length > 0) {
-					$j(".activityDetails .activity-ul").append("<li class='activity-li'><span id='header'>" + messages[indx]['name'] + "</span><div id='details' class='details' style='display:none;'>" +
+					$j(".activityDetails .activity-ul").append("<li class='activity-li'><span id='header'>" + messages[indx]['name'] + "</span><div id='details' class='details hide'>" +
 					((messages[indx]['desc'])?"<span id='desc'><ul class='row'<li id='label'>Description</li><li id='value'>" + messages[indx]['desc'] + "</li></ul></span>": "") +
 					((messages[indx]['script'])?"<span id='script'><ul class='row'><li id='label'>Notes</li></br><li id='value'><pre><code>" + messages[indx]['script'] + "</code></pre></li></ul></span>":"") +
 					((messages[indx]['type'])?"<span id='type'><ul class='row'><li id='label'>Artifact Type</li><li id='value'>" + messages[indx]['type'] + "</li></ul></span>":"") +
@@ -142,7 +136,17 @@ function updateActivityDetails(response){
 					"</div></li>");
 				}
 			}
-			
+			$j('.activityDetails .activity-li').on('click',function() {
+				if(!resourceClicked) {
+					if($j(this).find('#details').hasClass('hide')) {
+						$j(this).find('#details').removeClass('hide');
+					}else{
+						$j(this).find('#details').addClass('hide');
+					}
+				}else {
+					setTimeout(function(){resourceClicked = false;},0);
+				}			
+			});
 		}
 	}
 }
@@ -327,14 +331,14 @@ li#value {
         <sys_created_on>2016-11-29 18:58:27</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>d8d3220b4f536a004172fc728110c74b</sys_id>
-        <sys_mod_count>126</sys_mod_count>
+        <sys_mod_count>133</sys_mod_count>
         <sys_name>flow-nav</sys_name>
         <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
         <sys_update_name>sys_ui_page_d8d3220b4f536a004172fc728110c74b</sys_update_name>
-        <sys_updated_by>chaitanya.s</sys_updated_by>
-        <sys_updated_on>2016-12-20 08:58:34</sys_updated_on>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2017-01-12 06:19:11</sys_updated_on>
     </sys_ui_page>
 </record_update>

@@ -4,62 +4,62 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>active</element>
-            <list_id display_value="x_snc_techdoc_steps" element="NULL" name="x_snc_techdoc_steps" parent="x_snc_techdoc_usecases" relationship="8c102f076f2b620067a8c8c17c3ee4af" sys_domain="global" view="Default view">7e1c76744f37e2004172fc728110c76d</list_id>
+            <list_id display_value="x_snc_techdoc_steps" element="NULL" name="x_snc_techdoc_steps" parent="x_snc_techdoc_usecases" relationship="8c102f076f2b620067a8c8c17c3ee4af" sys_domain="global" view="Default view">0300ae096f18360067a8c8c17c3ee47d</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
             <sum>false</sum>
             <sys_created_by>shyam.j</sys_created_by>
-            <sys_created_on>2016-12-17 17:24:16</sys_created_on>
-            <sys_id>b21c76744f37e2004172fc728110c76e</sys_id>
+            <sys_created_on>2017-01-12 06:31:35</sys_created_on>
+            <sys_id>4700ae096f18360067a8c8c17c3ee47d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>shyam.j</sys_updated_by>
-            <sys_updated_on>2016-12-17 17:24:16</sys_updated_on>
+            <sys_updated_on>2017-01-12 06:31:35</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>step_description</element>
-            <list_id display_value="x_snc_techdoc_steps" element="NULL" name="x_snc_techdoc_steps" parent="x_snc_techdoc_usecases" relationship="8c102f076f2b620067a8c8c17c3ee4af" sys_domain="global" view="Default view">7e1c76744f37e2004172fc728110c76d</list_id>
+            <list_id display_value="x_snc_techdoc_steps" element="NULL" name="x_snc_techdoc_steps" parent="x_snc_techdoc_usecases" relationship="8c102f076f2b620067a8c8c17c3ee4af" sys_domain="global" view="Default view">0300ae096f18360067a8c8c17c3ee47d</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
             <sum>false</sum>
             <sys_created_by>shyam.j</sys_created_by>
-            <sys_created_on>2016-12-17 17:24:16</sys_created_on>
-            <sys_id>361c76744f37e2004172fc728110c76e</sys_id>
+            <sys_created_on>2017-01-12 06:31:35</sys_created_on>
+            <sys_id>c700ae096f18360067a8c8c17c3ee47d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>shyam.j</sys_updated_by>
-            <sys_updated_on>2016-12-17 17:24:16</sys_updated_on>
+            <sys_updated_on>2017-01-12 06:31:35</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>step_number</element>
-            <list_id display_value="x_snc_techdoc_steps" element="NULL" name="x_snc_techdoc_steps" parent="x_snc_techdoc_usecases" relationship="8c102f076f2b620067a8c8c17c3ee4af" sys_domain="global" view="Default view">7e1c76744f37e2004172fc728110c76d</list_id>
+            <list_id display_value="x_snc_techdoc_steps" element="NULL" name="x_snc_techdoc_steps" parent="x_snc_techdoc_usecases" relationship="8c102f076f2b620067a8c8c17c3ee4af" sys_domain="global" view="Default view">0300ae096f18360067a8c8c17c3ee47d</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
             <sum>false</sum>
             <sys_created_by>shyam.j</sys_created_by>
-            <sys_created_on>2016-12-17 17:24:16</sys_created_on>
-            <sys_id>b61c76744f37e2004172fc728110c76e</sys_id>
+            <sys_created_on>2017-01-12 06:31:35</sys_created_on>
+            <sys_id>4b00ae096f18360067a8c8c17c3ee47d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>shyam.j</sys_updated_by>
-            <sys_updated_on>2016-12-17 17:24:16</sys_updated_on>
+            <sys_updated_on>2017-01-12 06:31:35</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>use_case</element>
-            <list_id display_value="x_snc_techdoc_steps" element="NULL" name="x_snc_techdoc_steps" parent="x_snc_techdoc_usecases" relationship="8c102f076f2b620067a8c8c17c3ee4af" sys_domain="global" view="Default view">7e1c76744f37e2004172fc728110c76d</list_id>
+            <list_id display_value="x_snc_techdoc_steps" element="NULL" name="x_snc_techdoc_steps" parent="x_snc_techdoc_usecases" relationship="8c102f076f2b620067a8c8c17c3ee4af" sys_domain="global" view="Default view">0300ae096f18360067a8c8c17c3ee47d</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
             <sum>false</sum>
             <sys_created_by>shyam.j</sys_created_by>
-            <sys_created_on>2016-12-17 17:24:16</sys_created_on>
-            <sys_id>3a1c76744f37e2004172fc728110c76e</sys_id>
+            <sys_created_on>2017-01-12 06:31:35</sys_created_on>
+            <sys_id>cb00ae096f18360067a8c8c17c3ee47d</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>shyam.j</sys_updated_by>
-            <sys_updated_on>2016-12-17 17:24:16</sys_updated_on>
+            <sys_updated_on>2017-01-12 06:31:35</sys_updated_on>
         </sys_ui_list_element>
         <sys_ui_list action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
@@ -73,11 +73,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>shyam.j</sys_created_by>
-            <sys_created_on>2016-12-17 17:24:16</sys_created_on>
+            <sys_created_on>2016-12-27 08:41:20</sys_created_on>
             <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>7e1c76744f37e2004172fc728110c76d</sys_id>
+            <sys_id>7f4424404f0436004172fc728110c753</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_snc_techdoc_steps</sys_name>
             <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
@@ -86,7 +86,7 @@
             <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
             <sys_update_name>sys_ui_list_x_snc_techdoc_usecases_8c102f076f2b620067a8c8c17c3ee4af_null</sys_update_name>
             <sys_updated_by>shyam.j</sys_updated_by>
-            <sys_updated_on>2016-12-17 17:24:16</sys_updated_on>
+            <sys_updated_on>2016-12-27 08:41:20</sys_updated_on>
             <sys_user/>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>

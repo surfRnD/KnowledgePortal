@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Context Properties" max_length="40" name="x_snc_techdoc_cxt_properties0003" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Key" max_length="40" name="key" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Value" max_length="40" name="value" type="string"/>
+    </element>
+</database>

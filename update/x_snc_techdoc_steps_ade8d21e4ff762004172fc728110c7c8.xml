@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="x_snc_techdoc_steps">
+    <x_snc_techdoc_steps action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <step_description>Step 3 The contract will be displayed. On the header, right click and select and click Create Renewal Opportunity.</step_description>
+        <step_number>3</step_number>
+        <sys_class_name>x_snc_techdoc_steps</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-22 06:42:12</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>ade8d21e4ff762004172fc728110c7c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>true</sys_name>
+        <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
+        <sys_update_name>x_snc_techdoc_steps_ade8d21e4ff762004172fc728110c7c8</sys_update_name>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-22 06:42:12</sys_updated_on>
+        <use_case display_value="Future Opportunity">03279e9a4ff762004172fc728110c75b</use_case>
+    </x_snc_techdoc_steps>
+</record_update>

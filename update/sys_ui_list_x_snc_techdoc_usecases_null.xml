@@ -43,11 +43,11 @@
             <sum>false</sum>
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2016-11-27 17:13:25</sys_created_on>
-            <sys_customer_update>false</sys_customer_update>
+            <sys_created_on>2016-12-26 10:42:32</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>94d93b5e4f972a004172fc728110c7ae</sys_id>
+            <sys_id>d976f7634f3fe2004172fc728110c7b0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_name>x_snc_techdoc_usecases</sys_name>
             <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
@@ -56,8 +56,8 @@
             <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
             <sys_update_name>sys_ui_list_x_snc_techdoc_usecases_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2016-11-27 17:13:25</sys_updated_on>
-            <sys_user/>
+            <sys_updated_on>2016-12-26 10:42:32</sys_updated_on>
+            <sys_user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</sys_user>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>

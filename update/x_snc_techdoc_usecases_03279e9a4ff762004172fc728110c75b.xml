@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="x_snc_techdoc_usecases">
+    <x_snc_techdoc_usecases action="INSERT_OR_UPDATE">
+        <description>Future Opportunity</description>
+        <feature/>
+        <name>Future Opportunity</name>
+        <navigator>https://whatfix.com/community/deck.html?start=2&amp;suggest=1&amp;closeable=false#!/a6eb9460-b6ed-11e6-a32b-04013d24cc02/</navigator>
+        <step2nextevent>3,6,7,14</step2nextevent>
+        <sys_class_name>x_snc_techdoc_usecases</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-22 06:36:23</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>03279e9a4ff762004172fc728110c75b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Future Opportunity</sys_name>
+        <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
+        <sys_update_name>x_snc_techdoc_usecases_03279e9a4ff762004172fc728110c75b</sys_update_name>
+        <sys_updated_by>chaitanya.s</sys_updated_by>
+        <sys_updated_on>2016-12-22 06:40:23</sys_updated_on>
+        <technical_flow display_value="Future Opty">ffe4c3384f37e2004172fc728110c7be</technical_flow>
+        <track>sales</track>
+    </x_snc_techdoc_usecases>
+</record_update>

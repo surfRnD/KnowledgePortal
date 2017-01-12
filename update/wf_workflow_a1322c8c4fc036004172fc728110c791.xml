@@ -1,0 +1,1892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"ends":["91bee0844f0436004172fc728110c7c2"],"activities":{},"subflows":[],"stages":{}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition/>
+        <condition_type>run_match</condition_type>
+        <description>Quote WorkFlow</description>
+        <expected_sequences>d5be24844f0436004172fc728110c794,11be24844f0436004172fc728110c795</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>d5be24844f0436004172fc728110c794,11be24844f0436004172fc728110c795,59bee0844f0436004172fc728110c7c2,99be24844f0436004172fc728110c792,15bee0844f0436004172fc728110c7be,1dbee0844f0436004172fc728110c7c3,91bee0844f0436004172fc728110c7c2|d5be24844f0436004172fc728110c794,11be24844f0436004172fc728110c795,59bee0844f0436004172fc728110c7c2,99be24844f0436004172fc728110c792,15bee0844f0436004172fc728110c7be,1dbee0844f0436004172fc728110c7c3,55bee0844f0436004172fc728110c7c0</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>Quote WorkFlow</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration/>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">d5be24844f0436004172fc728110c794</start>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>51bee0844f0436004172fc728110c7bd</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:28:16</sys_updated_on>
+        <table>x_snc_techdoc_steps</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="Quote WorkFlow">a1322c8c4fc036004172fc728110c791</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description>Quote WorkFlow</description>
+        <name>Quote WorkFlow</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 08:32:10</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a1322c8c4fc036004172fc728110c791</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Quote WorkFlow</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
+        <sys_update_name>wf_workflow_a1322c8c4fc036004172fc728110c791</sys_update_name>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 08:32:10</sys_updated_on>
+        <table>x_snc_techdoc_steps</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d5be24844f0436004172fc728110c794</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Quote WorkFlow">51bee0844f0436004172fc728110c7bd</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=d5be24844f0436004172fc728110c794"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">d5be24844f0436004172fc728110c794</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>99be24844f0436004172fc728110c794</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Click on "Submit for Approval" UI Action</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>59bee0844f0436004172fc728110c7c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Quote WorkFlow">51bee0844f0436004172fc728110c7bd</workflow_version>
+        <x>72</x>
+        <y>192</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=59bee0844f0436004172fc728110c7c2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>59bee0844f0436004172fc728110c7c2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>11bee0844f0436004172fc728110c7c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>59bee0844f0436004172fc728110c7c2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d9bee0844f0436004172fc728110c7c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+var gr = new global.GlideRecord('x_snc_techdoc_cxt_properties');&#13;
+gr.addQuery('key',workflow.scratchpad.next);&#13;
+gr.query();&#13;
+if(gr.next() &amp;&amp; gr.value == 'true'){&#13;
+	answer = true;&#13;
+}</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>59bee0844f0436004172fc728110c7c2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>11bee0844f0436004172fc728110c7c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>59bee0844f0436004172fc728110c7c2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d9bee0844f0436004172fc728110c7c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+var gr = new global.GlideRecord('x_snc_techdoc_cxt_properties');&#13;
+gr.addQuery('key',workflow.scratchpad.next);&#13;
+gr.query();&#13;
+if(gr.next() &amp;&amp; gr.value == 'true'){&#13;
+	answer = true;&#13;
+}</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Click on &quot;Submit for Approval&quot; UI Action">59bee0844f0436004172fc728110c7c2</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>95bee0844f0436004172fc728110c7c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>91bee0844f0436004172fc728110c7c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="Quote WorkFlow">51bee0844f0436004172fc728110c7bd</workflow_version>
+        <x>1428</x>
+        <y>738</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=91bee0844f0436004172fc728110c7c2"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Approval - User">35433da80a0a029a0028c639a1e51eb4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Order Sales</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>1dbee0844f0436004172fc728110c7c3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:27:23</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Quote WorkFlow">51bee0844f0436004172fc728110c7bd</workflow_version>
+        <x>509</x>
+        <y>30</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=1dbee0844f0436004172fc728110c7c3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>11be24844f0436004172fc728110c78e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>15be24844f0436004172fc728110c78f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>19be24844f0436004172fc728110c790</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>19bee0844f0436004172fc728110c7c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>1dbe24844f0436004172fc728110c791</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>1dbee0844f0436004172fc728110c7c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>51be24844f0436004172fc728110c78d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>55be24844f0436004172fc728110c78e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>59be24844f0436004172fc728110c78f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>5dbe24844f0436004172fc728110c790</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>5dbee0844f0436004172fc728110c7c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>91be24844f0436004172fc728110c791</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user ids and/or group ids or an array of user/group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>91bee0844f0436004172fc728110c7c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>95be24844f0436004172fc728110c78d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>99be24844f0436004172fc728110c78e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>9dbe24844f0436004172fc728110c78f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>9dbee0844f0436004172fc728110c7c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d1be24844f0436004172fc728110c790</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d1bee0844f0436004172fc728110c7c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d5be24844f0436004172fc728110c791</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d5bee0844f0436004172fc728110c7c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d9be24844f0436004172fc728110c78d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>ddbe24844f0436004172fc728110c78e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>step_number=4^EQ</value>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>ddbe24844f0436004172fc728110c78e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>step_number=4^EQ</value>
+        <variable display_value="">4485eef70a6a803f6bc4bafa9e999640</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>19be24844f0436004172fc728110c790</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>any</value>
+        <variable display_value="">c35e5bdd0a0a0ba96248a709f495c9ae</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>101</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d5bee0844f0436004172fc728110c7c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="">e846198f0a0004f91fba434a514ba8b8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>103</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>1dbee0844f0436004172fc728110c7c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">e37b77ac0a0004f973283ad13b341c5b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>104</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d1be24844f0436004172fc728110c790</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">e37a96e80a0004f978b47d2d6c5e0b22</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>9dbee0844f0436004172fc728110c7c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a77191a4c0a800662b403f7dff5f1bbd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>115</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d5be24844f0436004172fc728110c791</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a76680b9c0a8006661b107d0f21fae67</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>51be24844f0436004172fc728110c78d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a77903a7c0a8006641af7c9b1d34444e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d9be24844f0436004172fc728110c78d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">c35e4cc40a0a0ba96248a7098ec9cb06</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>310</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>55be24844f0436004172fc728110c78e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>reject</value>
+        <variable display_value="">502163410a6a803f0356332b24dc7945</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>11be24844f0436004172fc728110c78e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="">e863e3b80a0004f911d67787e77e0f16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>5dbe24844f0436004172fc728110c790</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a774138dc0a80066000be7af20961c7d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>900</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>9dbe24844f0436004172fc728110c78f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>08fcd0830a0a0b2600079f56b1adb9ae</value>
+        <variable display_value="">a7754e91c0a800664938d0ef6d2664d7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1110</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>99be24844f0436004172fc728110c78e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a769a182c0a8006629db7fa3fc2a863d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1120</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>15be24844f0436004172fc728110c78f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>3bf802c20a0a0b52008e2859cd8abcf2</value>
+        <variable display_value="">a76c6257c0a8006645cff43883470e64</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>59be24844f0436004172fc728110c78f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a76b8c6ec0a800664bb14d5d8b9cd7c4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>1dbe24844f0436004172fc728110c791</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a7781cb6c0a80066147dc7a5244d5d16</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>5dbee0844f0436004172fc728110c7c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">a775f59ac0a8006665d72362ae687035</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1330</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>91bee0844f0436004172fc728110c7c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">02c618170a0a0b26436f5c2c9f7a3901</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1360</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>95be24844f0436004172fc728110c78d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>// Set 'answer' to the number of seconds this timer should wait&#13;
+answer = 0;</value>
+        <variable display_value="">a782cde9c0a8006608f39abdd85c8395</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>1370</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>19bee0844f0436004172fc728110c7c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>// Set the variable 'answer' to '', 'approved' or 'rejected' to indicate the approval status for this approval.  When called, the following information is available:&#13;
+//&#13;
+//    counts.total = total number of users that are part of this approval&#13;
+//    counts.approved = # of users that approved so far&#13;
+//    counts.rejected = # of users that rejected so far&#13;
+//    counts.requested = # of users that are pending approval&#13;
+//    counts.not_requested = # of users that are not pending approval&#13;
+//    counts.not_required = # of users that approval is not required&#13;
+//&#13;
+</value>
+        <variable display_value="">02c86d780a0a0b261e6a356bc893d348</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>2000</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d1bee0844f0436004172fc728110c7c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">02ca01820a0a0b261cf923fb95f5e1d0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>1dbee0844f0436004172fc728110c7c3</document_key>
+        <order>2050</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>91be24844f0436004172fc728110c791</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user ids and/or group ids or an array of user/group ids to add as approvers.&#13;
+//&#13;
+// For example:&#13;
+//       answer = [];&#13;
+//       answer.push('id1');&#13;
+//       answer.push('id2');&#13;
+</value>
+        <variable display_value="">c35e582f0a0a0ba96248a70985207e63</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Order Sales">1dbee0844f0436004172fc728110c7c3</activity>
+        <condition>activity.result == 'approved' || activity.result == 'skipped'</condition>
+        <condition_default display_value="Approved">586e1fa60a0a0b5c008121ab894f2b06</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Approved</name>
+        <order>1</order>
+        <short_description>Approval request was approved</short_description>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>15be24844f0436004172fc728110c792</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Order Sales">1dbee0844f0436004172fc728110c7c3</activity>
+        <condition>activity.result == 'rejected'</condition>
+        <condition_default display_value="Rejected">586e4ef60a0a0b5c00440b56c014c8a5</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Rejected</name>
+        <order>2</order>
+        <short_description>Approval request was rejected</short_description>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>91be24844f0436004172fc728110c792</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="PointCut">fd88f7aa4f9b2a004172fc728110c7f1</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Quote - OF Draft</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>11be24844f0436004172fc728110c795</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Quote WorkFlow">51bee0844f0436004172fc728110c7bd</workflow_version>
+        <x>69</x>
+        <y>113</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=11be24844f0436004172fc728110c795"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>11be24844f0436004172fc728110c795</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>1dbe24844f0436004172fc728110c795</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>/* Quote Stage : OF Draft */</value>
+        <variable display_value="">6f593faa4f9b2a004172fc728110c78d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>11be24844f0436004172fc728110c795</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>51be24844f0436004172fc728110c796</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">76ce53ff4f9f6a004172fc728110c77d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>11be24844f0436004172fc728110c795</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>91be24844f0436004172fc728110c795</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">97b933ea4f9b2a004172fc728110c72b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>11be24844f0436004172fc728110c795</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d5be24844f0436004172fc728110c795</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">d2a9ffaa4f9b2a004172fc728110c704</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>11be24844f0436004172fc728110c795</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>1dbe24844f0436004172fc728110c795</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>/* Quote Stage : OF Draft */</value>
+        <variable display_value="">6f593faa4f9b2a004172fc728110c78d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>11be24844f0436004172fc728110c795</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>51be24844f0436004172fc728110c796</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">76ce53ff4f9f6a004172fc728110c77d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>11be24844f0436004172fc728110c795</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d5be24844f0436004172fc728110c795</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">d2a9ffaa4f9b2a004172fc728110c704</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>11be24844f0436004172fc728110c795</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>91be24844f0436004172fc728110c795</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">97b933ea4f9b2a004172fc728110c72b</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Quote - OF Draft">11be24844f0436004172fc728110c795</activity>
+        <condition/>
+        <condition_default display_value="Always">932751b24f1f2a004172fc728110c76d</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d5be24844f0436004172fc728110c796</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="PointCut">fd88f7aa4f9b2a004172fc728110c7f1</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Run Script - Build Approval Metric</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>15bee0844f0436004172fc728110c7be</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:27:40</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Quote WorkFlow">51bee0844f0436004172fc728110c7bd</workflow_version>
+        <x>289</x>
+        <y>404</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=15bee0844f0436004172fc728110c7be"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15bee0844f0436004172fc728110c7be</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>19bee0844f0436004172fc728110c7be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>Build the Approval Metric</value>
+        <variable display_value="">97b933ea4f9b2a004172fc728110c72b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15bee0844f0436004172fc728110c7be</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>5dbee0844f0436004172fc728110c7be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>sys_script_include</value>
+        <variable display_value="">d2a9ffaa4f9b2a004172fc728110c704</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15bee0844f0436004172fc728110c7be</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>91bee0844f0436004172fc728110c7bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>/*&#13;
+&#13;
+create the Approval Metric&#13;
+It calls buildApprovalRecord from the script include QuoteApprovalMetricHelper.&#13;
+The BuildApprovalRecord contains the following steps&#13;
+			a. Calls the function _previewApprovalsForOrder(quote_sys_id). &#13;
+			Description:&#13;
+			Retrieves all the Approval Order for the selected object (Quote [sales_quote]) from the table(dynamic_rule).&#13;
+			b. Calls the function _getUniqueApprovers(result of step a). &#13;
+			Description:&#13;
+			Retrieves the unique approver from the Approvals List.&#13;
+			c. Calls the function _insertOrUpdateQuoteApprovalList(result of step a).  &#13;
+			Description: &#13;
+			For counter = 0 to ApprovalList.Length - 1&#13;
+			  Approver = ApprovalList[count]&#13;
+			  Checks whether the approver exists in u_quote_approval_metric. If does not exist, then insert the approver.&#13;
+			  Otherwise, it updates the approver. &#13;
+			End For&#13;
+			d. Calls the function _updateActiveFieldOfApprovers(result of step a,quote_sys_id).  &#13;
+			Description&#13;
+			Checks whether the approver exists in u_quote_approval_metric for the particular quote. If it exists, then it will update u_active as "true". Otherwise, it will update to "false".&#13;
+&#13;
+*/</value>
+        <variable display_value="">6f593faa4f9b2a004172fc728110c78d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15bee0844f0436004172fc728110c7be</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d5bee0844f0436004172fc728110c7bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>https://surfdev.service-now.com/sys_script_include.do?sys_id=c4872a464f2402001f77a50f0310c723</value>
+        <variable display_value="">76ce53ff4f9f6a004172fc728110c77d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15bee0844f0436004172fc728110c7be</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>5dbee0844f0436004172fc728110c7be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>sys_script_include</value>
+        <variable display_value="">d2a9ffaa4f9b2a004172fc728110c704</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15bee0844f0436004172fc728110c7be</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>91bee0844f0436004172fc728110c7bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>/*&#13;
+&#13;
+create the Approval Metric&#13;
+It calls buildApprovalRecord from the script include QuoteApprovalMetricHelper.&#13;
+The BuildApprovalRecord contains the following steps&#13;
+			a. Calls the function _previewApprovalsForOrder(quote_sys_id). &#13;
+			Description:&#13;
+			Retrieves all the Approval Order for the selected object (Quote [sales_quote]) from the table(dynamic_rule).&#13;
+			b. Calls the function _getUniqueApprovers(result of step a). &#13;
+			Description:&#13;
+			Retrieves the unique approver from the Approvals List.&#13;
+			c. Calls the function _insertOrUpdateQuoteApprovalList(result of step a).  &#13;
+			Description: &#13;
+			For counter = 0 to ApprovalList.Length - 1&#13;
+			  Approver = ApprovalList[count]&#13;
+			  Checks whether the approver exists in u_quote_approval_metric. If does not exist, then insert the approver.&#13;
+			  Otherwise, it updates the approver. &#13;
+			End For&#13;
+			d. Calls the function _updateActiveFieldOfApprovers(result of step a,quote_sys_id).  &#13;
+			Description&#13;
+			Checks whether the approver exists in u_quote_approval_metric for the particular quote. If it exists, then it will update u_active as "true". Otherwise, it will update to "false".&#13;
+&#13;
+*/</value>
+        <variable display_value="">6f593faa4f9b2a004172fc728110c78d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15bee0844f0436004172fc728110c7be</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d5bee0844f0436004172fc728110c7bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>https://surfdev.service-now.com/sys_script_include.do?sys_id=c4872a464f2402001f77a50f0310c723</value>
+        <variable display_value="">76ce53ff4f9f6a004172fc728110c77d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>15bee0844f0436004172fc728110c7be</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>19bee0844f0436004172fc728110c7be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>Build the Approval Metric</value>
+        <variable display_value="">97b933ea4f9b2a004172fc728110c72b</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Run Script - Build Approval Metric">15bee0844f0436004172fc728110c7be</activity>
+        <condition/>
+        <condition_default display_value="Always">932751b24f1f2a004172fc728110c76d</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>5dbee0844f0436004172fc728110c7bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="PointCut">fd88f7aa4f9b2a004172fc728110c7f1</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Run Script - Reset Old Approvals</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>99be24844f0436004172fc728110c792</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:27:35</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Quote WorkFlow">51bee0844f0436004172fc728110c7bd</workflow_version>
+        <x>287</x>
+        <y>304</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=99be24844f0436004172fc728110c792"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>99be24844f0436004172fc728110c792</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>1dbe24844f0436004172fc728110c792</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>Reset the old approvals.</value>
+        <variable display_value="">97b933ea4f9b2a004172fc728110c72b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>99be24844f0436004172fc728110c792</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>51be24844f0436004172fc728110c793</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>sys_script_include</value>
+        <variable display_value="">d2a9ffaa4f9b2a004172fc728110c704</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>99be24844f0436004172fc728110c792</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>95be24844f0436004172fc728110c793</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>/*&#13;
+Script Include : QuoteWorkflowUtil&#13;
+Method         : resetQuoteApprovalsOnSubmit&#13;
+params         : 1 - Quote, 2-rejectCode Status, 3-Reason for Rejection, 4 - Reset all the approvals for the current Quote &#13;
+&#13;
+Description :&#13;
+Check whether state (!= not_required) does exist in sysapproval_approver table. If exists, then retrieve the records. Then, update the record with the value (state = not_required) and comments.&#13;
+&#13;
+QuoteWorkflowUtil.resetQuoteApprovalsOnSubmit = function(quote, rejectionCode, rejectionReason, resetAll) {&#13;
+	quote.sales_quote_comments = rejectionReason;&#13;
+	quote.u_edit_approval_workflow_metric = true;&#13;
+	&#13;
+	// Reset the approvals&#13;
+	var approval = new GlideRecord('sysapproval_approver');&#13;
+	approval.addQuery('document_id', quote.sys_id);&#13;
+	if (!resetAll) {&#13;
+		approval.addQuery('state', 'IN', 'requested,not requested,cancelled');&#13;
+	} else {&#13;
+		approval.addQuery('state', '!=', 'not_required');&#13;
+	}&#13;
+	approval.query();&#13;
+	&#13;
+	while (approval.next()) {&#13;
+		approval.state = 'not_required';&#13;
+		approval.comments = rejectionReason;&#13;
+		approval.update();&#13;
+	}&#13;
+	&#13;
+}&#13;
+&#13;
+*/</value>
+        <variable display_value="">6f593faa4f9b2a004172fc728110c78d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>99be24844f0436004172fc728110c792</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d9be24844f0436004172fc728110c793</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>https://surfdev.service-now.com/sys_script_include.do?sys_id=c9d1f5ee5dfb91006f711c2ebbc08a98</value>
+        <variable display_value="">76ce53ff4f9f6a004172fc728110c77d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>99be24844f0436004172fc728110c792</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>51be24844f0436004172fc728110c793</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>sys_script_include</value>
+        <variable display_value="">d2a9ffaa4f9b2a004172fc728110c704</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>99be24844f0436004172fc728110c792</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>95be24844f0436004172fc728110c793</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>/*&#13;
+Script Include : QuoteWorkflowUtil&#13;
+Method         : resetQuoteApprovalsOnSubmit&#13;
+params         : 1 - Quote, 2-rejectCode Status, 3-Reason for Rejection, 4 - Reset all the approvals for the current Quote &#13;
+&#13;
+Description :&#13;
+Check whether state (!= not_required) does exist in sysapproval_approver table. If exists, then retrieve the records. Then, update the record with the value (state = not_required) and comments.&#13;
+&#13;
+QuoteWorkflowUtil.resetQuoteApprovalsOnSubmit = function(quote, rejectionCode, rejectionReason, resetAll) {&#13;
+	quote.sales_quote_comments = rejectionReason;&#13;
+	quote.u_edit_approval_workflow_metric = true;&#13;
+	&#13;
+	// Reset the approvals&#13;
+	var approval = new GlideRecord('sysapproval_approver');&#13;
+	approval.addQuery('document_id', quote.sys_id);&#13;
+	if (!resetAll) {&#13;
+		approval.addQuery('state', 'IN', 'requested,not requested,cancelled');&#13;
+	} else {&#13;
+		approval.addQuery('state', '!=', 'not_required');&#13;
+	}&#13;
+	approval.query();&#13;
+	&#13;
+	while (approval.next()) {&#13;
+		approval.state = 'not_required';&#13;
+		approval.comments = rejectionReason;&#13;
+		approval.update();&#13;
+	}&#13;
+	&#13;
+}&#13;
+&#13;
+*/</value>
+        <variable display_value="">6f593faa4f9b2a004172fc728110c78d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>99be24844f0436004172fc728110c792</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d9be24844f0436004172fc728110c793</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>https://surfdev.service-now.com/sys_script_include.do?sys_id=c9d1f5ee5dfb91006f711c2ebbc08a98</value>
+        <variable display_value="">76ce53ff4f9f6a004172fc728110c77d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>99be24844f0436004172fc728110c792</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>1dbe24844f0436004172fc728110c792</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>Reset the old approvals.</value>
+        <variable display_value="">97b933ea4f9b2a004172fc728110c72b</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Run Script - Reset Old Approvals">99be24844f0436004172fc728110c792</activity>
+        <condition/>
+        <condition_default display_value="Always">932751b24f1f2a004172fc728110c76d</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>51be24844f0436004172fc728110c794</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="PointCut">fd88f7aa4f9b2a004172fc728110c7f1</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>7</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Run Script : Order Rejected</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>55bee0844f0436004172fc728110c7c0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:28:01</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="Quote WorkFlow">51bee0844f0436004172fc728110c7bd</workflow_version>
+        <x>76</x>
+        <y>638</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=55bee0844f0436004172fc728110c7c0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>55bee0844f0436004172fc728110c7c0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>1dbee0844f0436004172fc728110c7c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">d2a9ffaa4f9b2a004172fc728110c704</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>55bee0844f0436004172fc728110c7c0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>51bee0844f0436004172fc728110c7c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>/*&#13;
+  Description&#13;
+  It will create an event (sales_quote.order.approval.rejected) and RollBack to Quote Initial Stage . (Draft)&#13;
+  &#13;
+  Script Include : QuoteWorkflowUtil&#13;
+  Method Name    : processRejectedOrder&#13;
+  Params         : 1 - Quote&#13;
+  &#13;
+  Method: QuoteWorkflowUtil.processRejectedOrder(quote);&#13;
+  &#13;
+  It calls again QuoteWorkflowUtil.resetQuoteApprovals. For more info, please refer Run script : Reset old approvals&#13;
+  &#13;
+*/</value>
+        <variable display_value="">6f593faa4f9b2a004172fc728110c78d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>55bee0844f0436004172fc728110c7c0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>95bee0844f0436004172fc728110c7c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>https://surfdev.service-now.com/sys_script_include.do?sys_id=c9d1f5ee5dfb91006f711c2ebbc08a98</value>
+        <variable display_value="">76ce53ff4f9f6a004172fc728110c77d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>55bee0844f0436004172fc728110c7c0</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d5bee0844f0436004172fc728110c7c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>Order Rejected</value>
+        <variable display_value="">97b933ea4f9b2a004172fc728110c72b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>55bee0844f0436004172fc728110c7c0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>1dbee0844f0436004172fc728110c7c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value/>
+        <variable display_value="">d2a9ffaa4f9b2a004172fc728110c704</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>55bee0844f0436004172fc728110c7c0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>51bee0844f0436004172fc728110c7c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>/*&#13;
+  Description&#13;
+  It will create an event (sales_quote.order.approval.rejected) and RollBack to Quote Initial Stage . (Draft)&#13;
+  &#13;
+  Script Include : QuoteWorkflowUtil&#13;
+  Method Name    : processRejectedOrder&#13;
+  Params         : 1 - Quote&#13;
+  &#13;
+  Method: QuoteWorkflowUtil.processRejectedOrder(quote);&#13;
+  &#13;
+  It calls again QuoteWorkflowUtil.resetQuoteApprovals. For more info, please refer Run script : Reset old approvals&#13;
+  &#13;
+*/</value>
+        <variable display_value="">6f593faa4f9b2a004172fc728110c78d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>55bee0844f0436004172fc728110c7c0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>95bee0844f0436004172fc728110c7c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>https://surfdev.service-now.com/sys_script_include.do?sys_id=c9d1f5ee5dfb91006f711c2ebbc08a98</value>
+        <variable display_value="">76ce53ff4f9f6a004172fc728110c77d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>55bee0844f0436004172fc728110c7c0</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d5bee0844f0436004172fc728110c7c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <value>Order Rejected</value>
+        <variable display_value="">97b933ea4f9b2a004172fc728110c72b</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Run Script : Order Rejected">55bee0844f0436004172fc728110c7c0</activity>
+        <condition/>
+        <condition_default display_value="Always">932751b24f1f2a004172fc728110c76d</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>true</skip_during_generate>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>1dbee0844f0436004172fc728110c7c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">5dbee0844f0436004172fc728110c7bf</condition>
+        <from display_value="Run Script - Build Approval Metric">15bee0844f0436004172fc728110c7be</from>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>11be24844f0436004172fc728110c798</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <to display_value="Order Sales">1dbee0844f0436004172fc728110c7c3</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Approved">15be24844f0436004172fc728110c792</condition>
+        <from display_value="Order Sales">1dbee0844f0436004172fc728110c7c3</from>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>15be24844f0436004172fc728110c798</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <to display_value="End">91bee0844f0436004172fc728110c7c2</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">99be24844f0436004172fc728110c794</condition>
+        <from display_value="Begin">d5be24844f0436004172fc728110c794</from>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>5dbe24844f0436004172fc728110c797</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <to display_value="Quote - OF Draft">11be24844f0436004172fc728110c795</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">1dbee0844f0436004172fc728110c7c1</condition>
+        <from display_value="Run Script : Order Rejected">55bee0844f0436004172fc728110c7c0</from>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:27:48</sys_created_on>
+        <sys_id>94fea4844f0436004172fc728110c759</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:27:48</sys_updated_on>
+        <to display_value="Click on &quot;Submit for Approval&quot; UI Action">59bee0844f0436004172fc728110c7c2</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">d5be24844f0436004172fc728110c796</condition>
+        <from display_value="Quote - OF Draft">11be24844f0436004172fc728110c795</from>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>99be24844f0436004172fc728110c797</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <to display_value="Click on &quot;Submit for Approval&quot; UI Action">59bee0844f0436004172fc728110c7c2</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">51be24844f0436004172fc728110c794</condition>
+        <from display_value="Run Script - Reset Old Approvals">99be24844f0436004172fc728110c792</from>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>99be24844f0436004172fc728110c798</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <to display_value="Run Script - Build Approval Metric">15bee0844f0436004172fc728110c7be</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">95bee0844f0436004172fc728110c7c3</condition>
+        <from display_value="Click on &quot;Submit for Approval&quot; UI Action">59bee0844f0436004172fc728110c7c2</from>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d5be24844f0436004172fc728110c797</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <to display_value="Run Script - Reset Old Approvals">99be24844f0436004172fc728110c792</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Rejected">91be24844f0436004172fc728110c792</condition>
+        <from display_value="Order Sales">1dbee0844f0436004172fc728110c7c3</from>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:27:10</sys_created_on>
+        <sys_id>face24844f0436004172fc728110c7bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:27:10</sys_updated_on>
+        <to display_value="Run Script : Order Rejected">55bee0844f0436004172fc728110c7c0</to>
+    </wf_transition>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2016-12-27 09:26:46</sys_created_on>
+        <sys_id>d1bee0844f0436004172fc728110c7bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2016-12-27 09:26:46</sys_updated_on>
+        <workflow_version display_value="Quote WorkFlow">51bee0844f0436004172fc728110c7bd</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=a1322c8c4fc036004172fc728110c791^sys_id!=51bee0844f0436004172fc728110c7bd">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>

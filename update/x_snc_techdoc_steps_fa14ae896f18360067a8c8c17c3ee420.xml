@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="x_snc_techdoc_steps">
+    <x_snc_techdoc_steps action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <step_description>Step 14 Inorder to create Built in Upsell Line item, click the new button in the line item related list.</step_description>
+        <step_number>14</step_number>
+        <sys_class_name>x_snc_techdoc_steps</sys_class_name>
+        <sys_created_by>shyam.j</sys_created_by>
+        <sys_created_on>2017-01-12 06:51:08</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>fa14ae896f18360067a8c8c17c3ee420</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>true</sys_name>
+        <sys_package display_value="TechDoc" source="x_snc_techdoc">020fa5796f5be60067a8c8c17c3ee41d</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="TechDoc">020fa5796f5be60067a8c8c17c3ee41d</sys_scope>
+        <sys_update_name>x_snc_techdoc_steps_fa14ae896f18360067a8c8c17c3ee420</sys_update_name>
+        <sys_updated_by>shyam.j</sys_updated_by>
+        <sys_updated_on>2017-01-12 06:51:08</sys_updated_on>
+        <use_case display_value="Future Opportunity">03279e9a4ff762004172fc728110c75b</use_case>
+    </x_snc_techdoc_steps>
+</record_update>
